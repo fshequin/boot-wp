@@ -17,4 +17,4 @@ A basic Wordpress site framework
 
 **Notes:** 
 
-Clone this repo into any folder, then hook up to the theme folder to CodeKit and your ready to Rock!
+Clone this repo into any folder, then hook up the theme folder to CodeKit and your ready to Rock!
