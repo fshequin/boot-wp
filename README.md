@@ -12,6 +12,7 @@ A basic Wordpress site framework
 4. An index.php file as the base index file
 5. The Wordpress 3.8 framework
 6. A starter theme called "boot", ready for customization
+7. I use CodeKit to check and compile the bootstrap and my own custom LESS / JS into the site's working CSS and JS files. The project includes a CodeKit config file that saves project level settings.
 
 **Notes:** 
 
