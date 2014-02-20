@@ -416,10 +416,10 @@
       "debugStyle" : 0,
       "strictMath" : 0
     },
-    "\/less\/alerts.less" : {
+    "\/less\/list-group.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/less\/alerts.less",
-      "outputAbbreviatedPath" : "\/less\/alerts.css",
+      "inputAbbreviatedPath" : "\/less\/list-group.less",
+      "outputAbbreviatedPath" : "\/less\/list-group.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -433,10 +433,10 @@
       "debugStyle" : 0,
       "strictMath" : 0
     },
-    "\/less\/list-group.less" : {
+    "\/less\/alerts.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/less\/list-group.less",
-      "outputAbbreviatedPath" : "\/less\/list-group.css",
+      "inputAbbreviatedPath" : "\/less\/alerts.less",
+      "outputAbbreviatedPath" : "\/less\/alerts.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -1001,7 +1001,7 @@
   "projectAttributes" : {
     "bourbonEnabled" : 0,
     "displayValue" : "boot-theme",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "compassEnabled" : 0
   }
 }
