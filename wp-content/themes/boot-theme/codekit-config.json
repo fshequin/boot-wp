@@ -54,7 +54,7 @@
       "strictMath" : 0
     },
     "\/css\/bootstrap-theme.css" : {
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
@@ -317,7 +317,7 @@
     "\/less\/theme.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/less\/theme.less",
-      "outputAbbreviatedPath" : "\/css\/css\/bootstrap-theme.min.css",
+      "outputAbbreviatedPath" : "\/css\/bootstrap-theme.min.css",
       "outputPathIsSetByUser" : 1,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -416,10 +416,10 @@
       "debugStyle" : 0,
       "strictMath" : 0
     },
-    "\/less\/list-group.less" : {
+    "\/less\/alerts.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/less\/list-group.less",
-      "outputAbbreviatedPath" : "\/less\/list-group.css",
+      "inputAbbreviatedPath" : "\/less\/alerts.less",
+      "outputAbbreviatedPath" : "\/less\/alerts.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -433,10 +433,10 @@
       "debugStyle" : 0,
       "strictMath" : 0
     },
-    "\/less\/alerts.less" : {
+    "\/less\/list-group.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/less\/alerts.less",
-      "outputAbbreviatedPath" : "\/less\/alerts.css",
+      "inputAbbreviatedPath" : "\/less\/list-group.less",
+      "outputAbbreviatedPath" : "\/less\/list-group.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -544,26 +544,6 @@
       "debugStyle" : 0,
       "strictMath" : 0
     },
-    "\/options-orig.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/options-orig.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/bootstrap.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/js\/bootstrap.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/bootstrap.min.js",
-      "fileType" : 64
-    },
     "\/less\/carousel.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/less\/carousel.less",
@@ -581,12 +561,32 @@
       "debugStyle" : 0,
       "strictMath" : 0
     },
+    "\/js\/bootstrap.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/js\/bootstrap.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/bootstrap.min.js",
+      "fileType" : 64
+    },
     "\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/options-orig.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/options-orig.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -746,7 +746,7 @@
     },
     "\/css\/bootstrap-theme.min.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/bootstrap-theme.min.css",
