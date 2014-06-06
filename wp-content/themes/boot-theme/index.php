@@ -18,6 +18,29 @@
   </head>
   <body>
     
+<div class="container">
+      <div class="row">
+        <div class="col-md-12 header">
+          Header
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-12 main-content">
+          Main Content
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-12 footer">
+          Footer
+        </div>
+      </div>
+    </div>
     
 
     
