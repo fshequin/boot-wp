@@ -66,6 +66,13 @@ function boot_setup() {
 	}
 
 	add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
+	
+	// Add Soil plugin supports
+
+	//add_theme_support('soil-clean-up');
+	add_theme_support('soil-relative-urls');
+	//add_theme_support('soil-nice-search');
+
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
