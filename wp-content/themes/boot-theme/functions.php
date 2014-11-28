@@ -18,8 +18,8 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
- * @subpackage grace-store
- * @since grace-store 1.0
+ * @subpackage boot-wp
+ * @since boot-wp 1.0
  */
 
 // link in the lib files
@@ -27,7 +27,7 @@
 	//require TEMPLATEPATH.'/libs/post_types.php';
 	//require TEMPLATEPATH.'/libs/taxonomies.php';
 
-	//add_action('init', 'require_grace_metaboxes');
+	//add_action('init', 'require_boot_metaboxes');
 
 	/**
 	 * Initialize the metabox class.
@@ -35,7 +35,7 @@
 	function require_boot_metaboxes() {
 	    require TEMPLATEPATH.'/libs/metaboxes.php';
 	    
-	    if( ! class_exists('cmb_Meta_Box'))
+	    if( !class_exists('cmb_Meta_Box'))
 	    {
 	        require TEMPLATEPATH.'/libs/metabox/init.php';
 	    }
@@ -67,12 +67,6 @@ function boot_setup() {
 
 	add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
 	
-	// Add Soil plugin supports
-
-	//add_theme_support('soil-clean-up');
-	add_theme_support('soil-relative-urls');
-	//add_theme_support('soil-nice-search');
-
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -155,7 +149,7 @@ function boot_load_javascript_files() {
   //wp_register_script( 'info-carousel-instance', get_template_directory_uri() . '/js/info-carousel-instance.js', array('info-caroufredsel'), '1.0', true );
   //wp_register_script( 'imagesLoaded', get_template_directory_uri().'/js/imagesLoaded.min.js', array('jquery'), false, true );
   //wp_register_script( 'masonry', get_template_directory_uri().'/js/masonry.min.js', array('jquery'), false, true);
-  wp_register_script( 'bootstrap-js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), '3.0.2', true );
+  wp_register_script( 'bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '3.3.1', true );
   //wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
   //wp_register_script( 'ddsmoothmenu-init', get_template_directory_uri().'/js/ddsmoothmenu-init.js', array('ddsmoothmenu'), '', true);
   //wp_register_script( 'pinterest', '//assets.pinterest.com/js/pinit.js', false, false, true );

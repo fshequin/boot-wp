@@ -105,11 +105,11 @@ function optionsframework_options() {
 		'name' => __('Basic Settings', 'options_check'),
 		'type' => 'heading');
 
-	$options[] = array(
+	/*$options[] = array(
 		'name' => __('Site Logo', 'options_check'),
 		'desc' => __('Set the header logo by uploading a file here. The file should be 572x92px', 'options_check'),
 		'id' => 'site_logo',
-		'type' => 'upload');
+		'type' => 'upload');*/
 
 	/*$options[] = array(
 		'name' => __('Input Text Mini', 'options_check'),
