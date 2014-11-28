@@ -6,12 +6,12 @@ A basic Wordpress site framework
 
 **Includes:**
 
-1. Twitter Bootstrap 3.3.0 distribution files - css, js, glyphicons
-2. Twitter Bootstrap 3.3.0 LESS files plus Bootstrap Mixins
+1. Twitter Bootstrap 3.3.1 distribution files - css, js, glyphicons
+2. Twitter Bootstrap 3.3.1 LESS files plus Bootstrap Mixins
 3. A style.less starter file that compiles to style.css for starting Wordpress themes
 4. A site.js that compiles to a site.min.js file
 5. An index.php file as the base index file
-6. The Wordpress 4.0 framework
+6. The Wordpress 4.01 framework
 7. Wordpress config rearranged to allow for both local and hosted DB configurations
 8. A starter theme called "boot", ready for customization
 9. Added a mixins.less file with many commonly used LESS mixins which compiles from style.less
