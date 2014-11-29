@@ -43,7 +43,7 @@
 <div class="container">
       <div class="row">
         <div class="col-md-12 footer">
-          <h3>Footer - <a href="/wp-admin/" target="_blank"><i class="fa fa-cog"></i></a></h3>
+          <p>Footer - <a href="/wp-admin/" target="_blank"><i class="fa fa-cog"></i></a></p>
         </div>
       </div>
     </div>
