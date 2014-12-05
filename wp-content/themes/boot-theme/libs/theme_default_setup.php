@@ -12,8 +12,10 @@ function btc_theme_setup()
                 // Setup Default WordPress settings
                 $core_settings = array(
                         'gmt_offset' => -5,                             
-                        'default_comment_status' => 'closed',           
+                        'default_comment_status' => 'closed',
+                        'default_ping_status' => 'closed',           
                         'comment_moderation' => 1,
+                        'comment_registration' => 1,
                         'require_name_email' => 1,
                         'start_of_week' => 0,                           
                         //'comments_per_page' => 20                     
