@@ -46,7 +46,18 @@ function boot_setup() {
 	//load_theme_textdomain( 'btc', get_template_directory() . '/languages' );
 	//add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', btc_fonts_url() ) );
 	
-	
+	// set some default options
+
+	$option_name = 'default_gmt_offset' ;
+	$new_value = -5 ;
+
+	if ( get_option( $option_name ) !== false ) {
+	    update_option( $option_name, $new_value );
+	} else {
+	    $deprecated = null;
+	    $autoload = 'no';
+	    add_option( $option_name, $new_value, $deprecated, $autoload );
+	}
 
 	// Remove some stuff we don't need
 	
