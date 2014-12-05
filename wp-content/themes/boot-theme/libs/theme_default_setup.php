@@ -11,10 +11,12 @@ function btc_theme_setup()
 
                 // Setup Default WordPress settings
                 $core_settings = array(
-                        'gmt_offset' => -5,             // Comment Avatars should be using mystery by default
-                        //'avatar_rating' => 'G',         // Avatar rating
-                        //'comment_max_links' => 0,       // We do not allow links from comments
-                        //'comments_per_page' => 20       // Default to 20 comments per page
+                        'gmt_offset' => -5,                             
+                        'default_comment_status' => 'closed',           
+                        'comment_moderation' => 1,
+                        'require_name_email' => 1,
+                        'start_of_week' => 0,                           
+                        //'comments_per_page' => 20                     
                 );
 
                 foreach ( $core_settings as $k => $v ) {
@@ -32,7 +34,7 @@ function btc_theme_setup()
                 // Lets let the admin know whats going on.
                 $msg = '
                 <div class="error">
-                        <p>The ' . get_option( 'current_theme' ) . 'theme has changed your WordPress default <a href="' . admin_url() . 'options-general.php" title="See Settings">settings</a> and deleted default posts & comments.</p>
+                        <p>The '.get_option( 'current_theme' ).' theme has changed your WordPress default <a href="' . admin_url() . 'options-general.php" title="See Settings">settings</a>.</p>
                 </div>';
                 add_action( 'admin_notices', $c = create_function( '', 'echo "' . addcslashes( $msg, '"' ) . '";' ) );
         } 
