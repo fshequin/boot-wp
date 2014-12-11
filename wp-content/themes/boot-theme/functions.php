@@ -170,6 +170,28 @@ function boot_load_javascript_files() {
 
 add_action( 'wp_enqueue_scripts', 'boot_load_javascript_files' );
 
+// add first and last class to menu items
 
+add_filter( 'wp_nav_menu_objects', 'btc_filter_menu_class');
+
+function btc_filter_menu_class( $objects ) {
+
+    // Only apply the classes to the primary navigation menu.
+    /*if ( isset( $args->theme_location ) ) {
+        if ( 'primary' !== $args->theme_location ) {
+            return $objects;
+        }
+    }*/
+
+    // Add "first-menu-item" class to the first menu object.
+    $objects[1]->classes[] = 'first-menu-item';
+
+    // Add "last-menu-item" class to the last menu object.
+    $objects[count( $objects )]->classes[] = 'last-menu-item';
+
+    // Return the menu objects
+    return $objects;
+
+}
 
 
