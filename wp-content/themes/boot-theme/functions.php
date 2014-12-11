@@ -153,6 +153,7 @@ function boot_load_javascript_files() {
   //wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
   //wp_register_script( 'ddsmoothmenu-init', get_template_directory_uri().'/js/ddsmoothmenu-init.js', array('ddsmoothmenu'), '', true);
   //wp_register_script( 'pinterest', '//assets.pinterest.com/js/pinit.js', false, false, true );
+  //wp_register_script( 'bootstrap-toolkit', get_template_directory_uri().'/js/bootstrap-toolkit.min.js', array('jquery'), '2.1.0', true );
   wp_register_script( 'site-js', get_template_directory_uri().'/js/site.min.js', array('jquery'), false, true );
   //wp_register_script( 'home-page-main-flex-slider', get_template_directory_uri().'/js/home-page-main-flex-slider.js', array('jquery.flexslider'), '1.0', true );
 
@@ -164,6 +165,7 @@ function boot_load_javascript_files() {
   wp_enqueue_script( 'bootstrap-js' );
   //wp_enqueue_script( 'vegas' );
   //wp_enqueue_script( 'pinterest' );
+  //wp_enqueue_script( 'bootstrap-toolkit' );
   wp_enqueue_script( 'site-js' );
 
 }
