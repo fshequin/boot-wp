@@ -123,28 +123,28 @@ function optionsframework_options() {
 		'name' => __('Facebook Link', 'options_check'),
 		'desc' => __('Your Facebook Page or Profile link.', 'options_check'),
 		'id' => 'facebook_link',
-		'std' => '',
+		'std' => 'enter your link here...',
 		'type' => 'text');
 	
 	$options[] = array(
 		'name' => __('Twitter Link', 'options_check'),
 		'desc' => __('Your Twitter profile link.', 'options_check'),
 		'id' => 'twitter_link',
-		'std' => '',
+		'std' => 'enter your link here...',
 		'type' => 'text');
 		
 	$options[] = array(
 		'name' => __('Tumblr Link', 'options_check'),
 		'desc' => __('Your Tumblr Link.', 'options_check'),
 		'id' => 'tumblr_link',
-		'std' => '',
+		'std' => 'enter your link here...',
 		'type' => 'text');
 		
 	$options[] = array(
 		'name' => __('Pinterest Link', 'options_check'),
 		'desc' => __('Your Pinterest link.', 'options_check'),
 		'id' => 'pinterest_link',
-		'std' => '',
+		'std' => 'enter your link here...',
 		'type' => 'text');
 		
 		
