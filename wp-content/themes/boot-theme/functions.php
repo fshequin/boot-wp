@@ -103,6 +103,15 @@ function boot_setup() {
 
 	// Custom image sizes
 	//add_image_size( 'side-thumbnail', 40, 40, true ); // 40px square crop
+
+	// Add image size to media panel
+	//add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+	function my_custom_sizes( $sizes ) {
+	    return array_merge( $sizes, array(
+	        'your-custom-size' => __( 'Your Custom Size Name' ),
+	    ) );
+	}
 	
 	// This theme uses its own gallery styles.
 	//add_filter( 'use_default_gallery_style', '__return_false' );
