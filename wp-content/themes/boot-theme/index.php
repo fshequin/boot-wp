@@ -1,56 +1,34 @@
-<!DOCTYPE html>
-<html>
-<?php wp_head(); ?>
-  <head>
-    <title>Site Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="<?php echo get_template_directory_uri(); ?>/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+<?php get_header(); ?>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    
-<div class="container">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 header">
-          <h1><?php bloginfo('name'); ?></h1>
+        <div class="col-md-8 main-content">         
+          <?php if(have_posts()) : ?>
+          <?php while(have_posts()) : the_post(); ?>
+          <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <h4><?php the_time('F j, Y'); ?></h4>
+          
+          <?php
+            $attr = array(
+              'class' => "attachment-image img-responsive",
+              /*'alt' => trim(strip_tags( $attachment->post_excerpt )),
+              'title' => trim(strip_tags( $attachment->post_title )),*/
+            );
+
+            if ( has_post_thumbnail() ) {
+              echo get_the_post_thumbnail( $post->ID, 'featured-image', $attr ); 
+            }
+          ?>
+          <?php the_excerpt(); ?>
+
+
+          <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
+        <div class="col-md-4 sidebar-content main-content"> 
+          <?php dynamic_sidebar( 'sidebar-1' ); ?>
         </div>
       </div>
     </div>
 
-<div class="container">
-      <div class="row">
-        <div class="col-md-12 main-content">
-          <h2>Main Content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-    </div>
-
-<div class="container">
-      <div class="row">
-        <div class="col-md-12 footer">
-          <p>Footer - <a href="/wp-admin/" target="_blank"><i class="fa fa-cog"></i></a></p>
-        </div>
-      </div>
-    </div>
-    
-
-    
-
-<?php wp_footer(); ?>
-  </body>
-</html>
+<?php get_footer(); ?>
