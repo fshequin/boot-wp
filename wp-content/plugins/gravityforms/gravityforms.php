@@ -30,7 +30,7 @@ along with this program.  If not, see http://www.gnu.org/licenses.
 //---------- Gravity Forms License Key -----------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------
 //If you hardcode a Gravity Forms License Key here, it will automatically populate on activation.
-$gf_license_key = '';
+$gf_license_key = 'f35c7f356a7bde31b49c73b61c0cc42e'; // bought on or about 4-18-2015 
 
 //-- OR ---//
 
