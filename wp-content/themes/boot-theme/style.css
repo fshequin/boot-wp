@@ -12,4 +12,126 @@ Text Domain: btc
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-*/@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);.source-sans-pro{font-family:'Source Sans Pro',sans-serif}.open-sans{font-family:'Open Sans',sans-serif}body{font-family:'Open Sans',sans-serif;font-size:16px;color:#333;font-weight:400}strong{font-weight:700}em{font-style:italic}a{color:#333;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}a:hover{text-decoration:none;color:#999}.nav>li>a{font-size:14px;font-weight:600}.nav>li>a:focus,.nav>li>a:hover{color:#333}.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#e28f26;background-color:#fff}.header{margin-top:10px}.header .site-description{font-weight:300;margin-bottom:20px;text-transform:uppercase}.attachment-image{margin:20px 0}.main-content a{color:#333}.main-content a:hover{text-decoration:none;color:#999}.main-content .post-title a{color:#333}.main-content .post-title a:hover{text-decoration:none;color:#999}.sidebar-content{font-size:14px}.sidebar-content h3{font-size:20px}.sidebar-content .search-submit{margin-top:10px}@media (min-width:768px){.sidebar-content .widget{margin-left:50px}.sidebar-content .search-submit{margin-top:0;margin-left:10px}}.footer{margin-top:40px;margin:0 15px;border-top:1px solid #ddd;padding-top:20px;font-size:14px}.footer a{color:#333}.footer a:hover{text-decoration:none;color:#999}
+*/
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Colors: */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+}
+strong {
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+a {
+  color: #333333;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+.nav > li > a {
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #333333;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #e28f26;
+  background-color: #ffffff;
+}
+.header {
+  margin-top: 10px;
+}
+.header .site-description {
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.attachment-image {
+  margin: 20px 0;
+}
+.main-content a {
+  color: #333333;
+}
+.main-content a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+.main-content .post-title a {
+  color: #333333;
+}
+.main-content .post-title a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+.sidebar-content {
+  font-size: 14px;
+}
+.sidebar-content h3 {
+  font-size: 20px;
+}
+.sidebar-content .search-submit {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .sidebar-content .widget {
+    margin-left: 50px;
+  }
+  .sidebar-content .search-submit {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+.footer {
+  margin-top: 40px;
+  margin: 0 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  font-size: 14px;
+}
+.footer a {
+  color: #333333;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+.aligncenter {
+  display: block;
+  margin: 15px auto;
+}
+.alignleft {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+figure.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+}
+/*# sourceMappingURL=style.css.map */
