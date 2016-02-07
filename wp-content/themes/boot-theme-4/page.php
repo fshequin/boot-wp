@@ -2,7 +2,9 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8 main-content">         
+        <div class="col-md-8 main-column"> 
+
+        <div class="main">        
           <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
           <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -25,7 +27,8 @@
           <?php endwhile; ?>
           <?php endif; ?>
         </div>
-        <div class="col-md-4 sidebar-content main-content"> 
+        </div>
+        <div class="col-md-4 sidebar-column"> 
           <?php dynamic_sidebar( 'sidebar-1' ); ?>
         </div>
       </div>

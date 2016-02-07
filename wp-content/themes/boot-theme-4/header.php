@@ -35,7 +35,7 @@
                               'container'       => 'div',
                               'container_class' => 'menu-wrapper',
                               'container_id'    => '',
-                              'menu_class'      => 'nav nav-tabs',
+                              'menu_class'      => 'nav nav-inline',
                               'menu_id'         => '',
                               'echo'            => true,
                               'fallback_cb'     => 'wp_page_menu',
