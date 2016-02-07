@@ -6,18 +6,18 @@
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com
- * @copyright 2010-2014 WP Theming
+ * @copyright 2010-2016 WP Theming
  *
  * @wordpress-plugin
  * Plugin Name: Options Framework
  * Plugin URI:  http://wptheming.com
  * Description: A framework for building theme options.
- * Version:     1.8.4
+ * Version:     1.8.5
  * Author:      Devin Price
  * Author URI:  http://wptheming.com
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: optionsframework
+ * Text Domain: options-framework
  * Domain Path: /languages
  */
 
