@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-md-12 header">
           <h1 class="site-title"><a href="/"><?php bloginfo('name'); ?></a></h1>
-          <h4 class="site-description"><?php bloginfo('description'); ?></h4>
+          <h5 class="site-description"><?php bloginfo('description'); ?></h5>
 
           <?php
               

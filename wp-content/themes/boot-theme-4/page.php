@@ -8,7 +8,7 @@
           <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
           <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <h4 class="date"><?php the_time('F j, Y'); ?></h4>
+          <!-- <h4 class="date"><?php //the_time('F j, Y'); ?></h4> -->
           
           <?php
             $attr = array(
@@ -35,3 +35,4 @@
     </div>
 
 <?php get_footer(); ?>
+

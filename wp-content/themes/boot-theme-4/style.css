@@ -59,6 +59,7 @@ a:hover {
 
 .nav-inline li > a {
   padding: 10px 15px 10px 0px;
+  text-transform: uppercase;
 }
 
 /* Main styles */
@@ -67,12 +68,20 @@ a:hover {
   padding: 20px;
 }
 
+.main-column .main .post-meta {
+  color: #55595c;
+}
+
 .site-title {
   margin: 10px 0 10px 0;
   padding: 0 0 0 0;
 }
 
 /* sidebar styles */
+.sidebar-column h3 {
+  font-size: 1.35rem;
+}
+
 .sidebar-column .input-group {
   margin-bottom: 20px;
 }

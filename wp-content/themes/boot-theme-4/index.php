@@ -9,7 +9,7 @@
             <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
             <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <h4><?php the_time('F j, Y'); ?></h4>
+            <h5 class="post-meta"><?php the_time('F j, Y'); ?></h5>
             
             <?php
               $attr = array(

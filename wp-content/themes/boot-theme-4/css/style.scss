@@ -90,6 +90,7 @@ a:hover {
 .nav-inline {
 	li>a {
 		padding: 10px 15px 10px 0px;
+		text-transform: uppercase;
 	}		
 }
 
@@ -101,7 +102,9 @@ a:hover {
 	padding: 20px;
 
 	.main {
-
+		.post-meta {
+			color: $gray;
+		}
 	}
 }
 .site-title {
@@ -112,6 +115,9 @@ a:hover {
 /* sidebar styles */
 
 .sidebar-column {
+	h3 {
+		font-size: 1.35rem;
+	}
 	.input-group {
 		margin-bottom: 20px;
 	}
