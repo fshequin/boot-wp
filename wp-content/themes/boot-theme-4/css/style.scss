@@ -3,7 +3,7 @@ Theme Name: Boot Theme 4
 Theme URI: http://btcny.com
 Author: Fred Shequine
 Author URI: http://btcny.com
-Description: Custom theme for project.
+Description: Bootstrap 4 Alpha 2 based Custom theme for project.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,6 +50,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 $white: #ffffff;
 $black: #333333;
 $gray-green: #45504b;
+
+/* borders */
+
+$header-footer-border: 1px solid $gray-lighter;
 
 /* general site wide styles */
 
@@ -107,7 +111,24 @@ a:hover {
 
 /* sidebar styles */
 
+.sidebar-column {
+	.input-group {
+		margin-bottom: 20px;
+	}
+	input.search-field {
+		width: 65% !important;
+		margin-right: 10px;
+	}
+}
+
 /* footer  styles */
+
+.footer-column {
+	p {
+		border-top: $header-footer-border;
+		padding-top: 20px;
+	}
+}
 
 /* Media Queries */
 
