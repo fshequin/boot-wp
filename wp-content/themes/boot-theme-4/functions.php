@@ -86,7 +86,7 @@ function boot_setup() {
 	) );*/
 
 	// Register Custom Navigation Walker
-	require_once('bootstrap-navwalker/wp_bootstrap_navwalker.php');
+	require_once('bootstrap-navwalker/wp_bootstrap_navwalker-4.php');
 
 	// Register Custom Comment Walker
 	//require_once('custom_comment_walker.php');
@@ -158,8 +158,9 @@ function boot_load_javascript_files() {
   //wp_register_script( 'info-carousel-instance', get_template_directory_uri() . '/js/info-carousel-instance.js', array('info-caroufredsel'), '1.0', true );
   //wp_register_script( 'imagesLoaded', get_template_directory_uri().'/js/imagesLoaded.min.js', array('jquery'), false, true );
   //wp_register_script( 'masonry', get_template_directory_uri().'/js/masonry.min.js', array('jquery'), false, true);
-  wp_register_script( 'bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '3.3.1', true );
-  //wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
+  wp_register_script( 'tether', get_template_directory_uri().'/bower_components/tether/dist/js/tether.min.js', array('jquery'), '1.1.0', true );
+  wp_register_script( 'bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '2.1.4', true );
+  wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
   //wp_register_script( 'ddsmoothmenu-init', get_template_directory_uri().'/js/ddsmoothmenu-init.js', array('ddsmoothmenu'), '', true);
   //wp_register_script( 'pinterest', '//assets.pinterest.com/js/pinit.js', false, false, true );
   //wp_register_script( 'bootstrap-toolkit', get_template_directory_uri().'/js/bootstrap-toolkit.min.js', array('jquery'), '2.1.0', true );
@@ -171,6 +172,7 @@ function boot_load_javascript_files() {
   //wp_enqueue_script( 'imagesLoaded' );
   //wp_enqueue_script( 'masonry' );
   //wp_enqueue_script( 'thickbox' );
+  wp_enqueue_script( 'tether' );
   wp_enqueue_script( 'bootstrap-js' );
   //wp_enqueue_script( 'vegas' );
   //wp_enqueue_script( 'pinterest' );
