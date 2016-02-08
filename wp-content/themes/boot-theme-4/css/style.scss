@@ -58,7 +58,8 @@ $header-footer-border: 1px solid $gray-lighter;
 /* general site wide styles */
 
 body {
-	@include font-1;
+	//@include font-1;
+	font-family: $font-family-sans-serif;
 	color: $black;
 }
 h1, 
