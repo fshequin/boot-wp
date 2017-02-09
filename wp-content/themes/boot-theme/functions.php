@@ -151,6 +151,7 @@ function boot_widgets_init() {
 add_action( 'widgets_init', 'boot_widgets_init' );
 
 // Register some javascript files, because we love javascript files. Enqueue a couple as well 
+// wp_register_script( string $handle, string $src, array $deps = array(), string|bool|null $ver = false, bool $in_footer = false )
 
 function boot_load_javascript_files() {
 
