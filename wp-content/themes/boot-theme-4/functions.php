@@ -27,10 +27,11 @@
 	//require TEMPLATEPATH.'/libs/post_types.php';
 	//require TEMPLATEPATH.'/libs/taxonomies.php';
 
-	//add_action('init', 'require_boot_metaboxes');
+	//add_action('init', 'require_boot_metaboxes')
+	//add_action('init', 'require_boot_cmb2_metaboxes');;
 
 	/**
-	 * Initialize the metabox class.
+	 * Initialize the old CMB metabox class.
 	 */
 	function require_boot_metaboxes() {
 	    require TEMPLATEPATH.'/libs/metaboxes.php';
@@ -39,6 +40,17 @@
 	    {
 	        require TEMPLATEPATH.'/libs/metabox/init.php';
 	    }
+	}
+	/**
+	 * Initialize the CMB2 metabox class.
+	 */
+
+	function require_boot_cmb2_metaboxes() {	
+		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
+		
+// 		if ( file_exists( __DIR__ . '/libs/cmb2/init.php' ) ) {
+// 		  require_once __DIR__ . '/libs/cmb2/init.php';
+// 		}
 	}
 
 	require TEMPLATEPATH.'/libs/theme_default_setup.php';
