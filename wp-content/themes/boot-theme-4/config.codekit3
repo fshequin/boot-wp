@@ -6216,6 +6216,16 @@
 		"oAP": "\/page.php",
 		"oF": 0
 		},
+	"\/screenshot.png": {
+		"ft": 32768,
+		"iS": 40609,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/screenshot.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/searchform.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -6253,7 +6263,7 @@
 	"creationDate": 512430169,
 	"displayValue": "boot-theme-4",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-cocaine"
+	"iconImageName": "brackets_orange"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
