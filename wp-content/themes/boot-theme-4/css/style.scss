@@ -170,7 +170,15 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+	.navbar .container {
+		width: 100%;
+	}
+	.navbar button {
+		position: absolute;
+		right: 5px;
+	}
+}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {}

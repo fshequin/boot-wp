@@ -126,4 +126,13 @@ img.aligncenter {
 }
 
 /* Media Queries */
+@media (max-width: 575px) {
+  .navbar .container {
+    width: 100%;
+  }
+  .navbar button {
+    position: absolute;
+    right: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
