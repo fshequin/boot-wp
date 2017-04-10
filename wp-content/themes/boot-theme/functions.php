@@ -47,10 +47,7 @@
 
 	function require_boot_cmb2_metaboxes() {	
 		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
-		
-// 		if ( file_exists( __DIR__ . '/libs/cmb2/init.php' ) ) {
-// 		  require_once __DIR__ . '/libs/cmb2/init.php';
-// 		}
+		//require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
 	}
 
 	require TEMPLATEPATH.'/libs/theme_default_setup.php';

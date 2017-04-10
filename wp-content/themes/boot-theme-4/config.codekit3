@@ -6228,6 +6228,12 @@
 		"oAP": "\/libs\/theme_default_setup.php",
 		"oF": 0
 		},
+	"\/libs\/theme_options_cmb2.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/libs\/theme_options_cmb2.php",
+		"oF": 0
+		},
 	"\/options-examples.php": {
 		"ft": 8192,
 		"oA": 0,
