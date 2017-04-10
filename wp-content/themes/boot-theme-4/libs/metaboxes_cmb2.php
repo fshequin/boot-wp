@@ -119,9 +119,9 @@ function btc_register_boot_metabox() {
 	 */
 	$cmb_demo = new_cmb2_box( array(
 		'id'            => $prefix . 'metabox',
-		'title'         => esc_html__( 'Home Images', 'cmb2' ),
+		'title'         => esc_html__( 'Attached Images', 'cmb2' ),
 		'object_types'  => array( 'page', ), // Post type
-		'show_on_cb' => 'btc_show_if_front_page', // function should return a bool value
+		//'show_on_cb' => 'btc_show_if_front_page', // function should return a bool value
 		// 'context'    => 'normal',
 		// 'priority'   => 'high',
 		// 'show_names' => true, // Show field names on the left

@@ -24,11 +24,11 @@
 
 // link in the lib files
 
-	//require TEMPLATEPATH.'/libs/post_types.php';
-	//require TEMPLATEPATH.'/libs/taxonomies.php';
+	//require TEMPLATEPATH.'/libs/post_types.php'; // uncomment to activate
+	//require TEMPLATEPATH.'/libs/taxonomies.php'; // uncomment to activate
 
-	//add_action('init', 'require_boot_metaboxes')
-	//add_action('init', 'require_boot_cmb2_metaboxes');;
+	//add_action('init', 'require_boot_metaboxes'); // uncomment to activate
+	//add_action('init', 'require_boot_cmb2_metaboxes'); // uncomment to activate
 
 	/**
 	 * Initialize the old CMB metabox class.
@@ -47,7 +47,7 @@
 
 	function require_boot_cmb2_metaboxes() {	
 		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
-		//require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
+		require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
 	}
 
 	require TEMPLATEPATH.'/libs/theme_default_setup.php';

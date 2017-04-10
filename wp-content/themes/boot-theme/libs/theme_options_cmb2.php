@@ -3,19 +3,19 @@
  * CMB2 Theme Options
  * @version 0.1.0
  */
-class Myprefix_Admin {
+class BTC_Admin {
 
 	/**
  	 * Option key, and option page slug
  	 * @var string
  	 */
-	private $key = 'myprefix_options';
+	private $key = 'btc_options';
 
 	/**
  	 * Options page metabox id
  	 * @var string
  	 */
-	private $metabox_id = 'myprefix_option_metabox';
+	private $metabox_id = 'btc_option_metabox';
 
 	/**
 	 * Options Page title
@@ -32,14 +32,14 @@ class Myprefix_Admin {
 	/**
 	 * Holds an instance of the object
 	 *
-	 * @var Myprefix_Admin
+	 * @var BTC_Admin
 	 */
 	protected static $instance = null;
 
 	/**
 	 * Returns the running object
 	 *
-	 * @return Myprefix_Admin
+	 * @return BTC_Admin
 	 */
 	public static function get_instance() {
 		if ( null === self::$instance ) {
@@ -56,7 +56,7 @@ class Myprefix_Admin {
 	 */
 	protected function __construct() {
 		// Set our title
-		$this->title = __( 'Site Options', 'myprefix' );
+		$this->title = __( 'Site Options', 'btc' );
 	}
 
 	/**
@@ -125,19 +125,57 @@ class Myprefix_Admin {
 		// Set our CMB2 fields
 
 		$cmb->add_field( array(
-			'name' => __( 'Test Text', 'myprefix' ),
-			'desc' => __( 'field description (optional)', 'myprefix' ),
-			'id'   => 'test_text',
+			'name' => 'Test Settings',
+			'desc' => 'These settings are just a test',
+			'type' => 'title',
+			'id'   => 'btc_test_title'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Test Text', 'btc' ),
+			'desc' => __( 'field description (optional)', 'btc' ),
+			'id'   => 'test_text1',
 			'type' => 'text',
 			'default' => 'Default Text',
 		) );
 
 		$cmb->add_field( array(
-			'name'    => __( 'Test Color Picker', 'myprefix' ),
-			'desc'    => __( 'field description (optional)', 'myprefix' ),
+			'name'    => __( 'Test Color Picker', 'btc' ),
+			'desc'    => __( 'field description (optional)', 'btc' ),
 			'id'      => 'test_colorpicker',
 			'type'    => 'colorpicker',
 			'default' => '#bada55',
+		) );
+
+		$cmb->add_field( array(
+			'name' => 'Social Media Links',
+			'desc' => 'Enter your Social Media Links in the fields below',
+			'type' => 'title',
+			'id'   => 'btc_social_links_title'
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Facebook Link', 'btc' ),
+			'desc' => __( 'enter your Facebook Link', 'btc' ),
+			'id'   => 'facebook_link',
+			'type' => 'text',
+			'default' => 'facebook link',
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'LinkedIn Link', 'btc' ),
+			'desc' => __( 'enter your LinkedIn Link', 'btc' ),
+			'id'   => 'linkedin_link',
+			'type' => 'text',
+			'default' => 'linkedin link',
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Twitter Link', 'btc' ),
+			'desc' => __( 'enter your Twitter Link', 'btc' ),
+			'id'   => 'twitter_link',
+			'type' => 'text',
+			'default' => 'twitter link',
 		) );
 
 	}
@@ -155,7 +193,7 @@ class Myprefix_Admin {
 			return;
 		}
 
-		add_settings_error( $this->key . '-notices', '', __( 'Settings updated.', 'myprefix' ), 'updated' );
+		add_settings_error( $this->key . '-notices', '', __( 'Settings updated.', 'btc' ), 'updated' );
 		settings_errors( $this->key . '-notices' );
 	}
 
@@ -177,12 +215,12 @@ class Myprefix_Admin {
 }
 
 /**
- * Helper function to get/return the Myprefix_Admin object
+ * Helper function to get/return the BTC_Admin object
  * @since  0.1.0
- * @return Myprefix_Admin object
+ * @return BTC_Admin object
  */
-function myprefix_admin() {
-	return Myprefix_Admin::get_instance();
+function btc_admin() {
+	return BTC_Admin::get_instance();
 }
 
 /**
@@ -192,14 +230,14 @@ function myprefix_admin() {
  * @param  mixed  $default Optional default value
  * @return mixed           Option value
  */
-function myprefix_get_option( $key = '', $default = null ) {
+function btc_get_option( $key = '', $default = null ) {
 	if ( function_exists( 'cmb2_get_option' ) ) {
 		// Use cmb2_get_option as it passes through some key filters.
-		return cmb2_get_option( myprefix_admin()->key, $key, $default );
+		return cmb2_get_option( btc_admin()->key, $key, $default );
 	}
 
 	// Fallback to get_option if CMB2 is not loaded yet.
-	$opts = get_option( myprefix_admin()->key, $key, $default );
+	$opts = get_option( btc_admin()->key, $key, $default );
 
 	$val = $default;
 
@@ -213,4 +251,4 @@ function myprefix_get_option( $key = '', $default = null ) {
 }
 
 // Get it started
-myprefix_admin();
+btc_admin();
