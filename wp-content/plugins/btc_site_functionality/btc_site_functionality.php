@@ -23,7 +23,7 @@ if ( !defined( 'WPINC' ) ) {
 	//require WP_PLUGIN_DIR.'/btc_site_functionality/libs/taxonomies.php';
 
 	//add_action('init', 'require_boot_metaboxes');  // old cmb class
-	add_action('init', 'require_boot_cmb2_metaboxes'); // new cmb2 class
+	//add_action('init', 'require_boot_cmb2_metaboxes'); // new cmb2 class
 
 	/**
 	 * Initialize the old CMB metabox class.
@@ -47,4 +47,4 @@ if ( !defined( 'WPINC' ) ) {
 
 	// cmb2 plugin - cmb2-attached-posts-field
 
-	require WP_PLUGIN_DIR.'/btc_site_functionality/libs/cmb2-attached-posts-example.php'; // uncomment to activate
+	//require WP_PLUGIN_DIR.'/btc_site_functionality/libs/cmb2-attached-posts-example.php'; // uncomment to activate

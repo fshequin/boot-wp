@@ -33,22 +33,22 @@
 	/**
 	 * Initialize the old CMB metabox class.
 	 */
-	function require_boot_metaboxes() {
+	/*function require_boot_metaboxes() {
 	    require TEMPLATEPATH.'/libs/metaboxes.php';
 	    
 	    if( !class_exists('cmb_Meta_Box'))
 	    {
 	        require TEMPLATEPATH.'/libs/metabox/init.php';
 	    }
-	}
+	}*/
 	/**
 	 * Initialize the CMB2 metabox class.
 	 */
 
-	function require_boot_cmb2_metaboxes() {	
+	/*function require_boot_cmb2_metaboxes() {	
 		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
 		require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
-	}
+	}*/
 
 	require TEMPLATEPATH.'/libs/theme_default_setup.php';
 
