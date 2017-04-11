@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       BTC Functionality Plugin
  * Plugin URI:        http://btcny.com/btc-site-functionality/
- * Description:       This plugin is used to modularize non-theme specific functionality for your Wordpress site. Custom Post Types, Custom Taxonomies, CMB2 metaboxes. Always leave this plugin activated.
+ * Description:       This plugin is used to modularize non-theme specific functionality for your Wordpress site. Custom Post Types, Custom Taxonomies, CMB2 metaboxes & CMB2 Theme Options. Always leave this plugin activated or follow the instructions from BTC.
  * Version:           1.0.0
  * Author:            Fred Shequine
  * Author URI:        http://btcny.com/
