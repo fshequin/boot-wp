@@ -2,6 +2,8 @@
 /**
  * CMB2 Theme Options
  * @version 0.1.0
+ *
+ * to retrieve an option <?php echo btc_get_option('test_text'); ?>
  */
 class BTC_Admin {
 
