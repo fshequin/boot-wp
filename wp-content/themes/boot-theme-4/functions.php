@@ -35,7 +35,7 @@
 	 */
 	/*function require_boot_metaboxes() {
 	    require TEMPLATEPATH.'/libs/metaboxes.php';
-	    
+
 	    if( !class_exists('cmb_Meta_Box'))
 	    {
 	        require TEMPLATEPATH.'/libs/metabox/init.php';
@@ -45,7 +45,7 @@
 	 * Initialize the CMB2 metabox class.
 	 */
 
-	/*function require_boot_cmb2_metaboxes() {	
+	/*function require_boot_cmb2_metaboxes() {
 		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
 		require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
 	}*/
@@ -53,12 +53,12 @@
 	require TEMPLATEPATH.'/libs/theme_default_setup.php';
 
 function boot_setup() {
-	
+
 	//load_theme_textdomain( 'btc', get_template_directory() . '/languages' );
 	//add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', btc_fonts_url() ) );
 
 	// Remove some stuff we don't need
-	
+
 	remove_action('wp_head', 'wp_generator');
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'wlwmanifest_link');
@@ -75,7 +75,7 @@ function boot_setup() {
 	}
 
 	add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
-	
+
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -95,7 +95,9 @@ function boot_setup() {
 	) );*/
 
 	// Register Custom Navigation Walker
-	require_once('bootstrap-navwalker/wp_bootstrap_navwalker-4.php');
+	//require_once('bootstrap-navwalker/wp_bootstrap_navwalker-4.php');
+    require_once('bootstrap-navwalker/bs4navwalker.php');
+
 
 	// Register Custom Comment Walker
 	//require_once('custom_comment_walker.php');
@@ -121,7 +123,7 @@ function boot_setup() {
 	        'your-custom-size' => __( 'Your Custom Size Name' ),
 	    ) );
 	}
-	
+
 	// This theme uses its own gallery styles.
 	//add_filter( 'use_default_gallery_style', '__return_false' );
 }
@@ -154,12 +156,12 @@ function boot_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
-	
+
 
 }
 add_action( 'widgets_init', 'boot_widgets_init' );
 
-// Register some javascript files, because we love javascript files. Enqueue a couple as well 
+// Register some javascript files, because we love javascript files. Enqueue a couple as well
 
 function boot_load_javascript_files() {
 
@@ -167,9 +169,11 @@ function boot_load_javascript_files() {
   //wp_register_script( 'info-carousel-instance', get_template_directory_uri() . '/js/info-carousel-instance.js', array('info-caroufredsel'), '1.0', true );
   //wp_register_script( 'imagesLoaded', get_template_directory_uri().'/js/imagesLoaded.min.js', array('jquery'), false, true );
   //wp_register_script( 'masonry', get_template_directory_uri().'/js/masonry.min.js', array('jquery'), false, true);
-  wp_register_script( 'tether', get_template_directory_uri().'/bower_components/tether/dist/js/tether.min.js', array('jquery'), '1.1.0', true );
+  //wp_register_script( 'popper', get_template_directory_uri().'/bower_components/popper.js/dist/umd/popper.min.js', array(''), '1.12.9', true );
+  wp_register_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), '1.12.9', true );
+  //wp_register_script( 'tether', get_template_directory_uri().'/bower_components/tether/dist/js/tether.min.js', array('jquery'), '1.1.0', true );
   wp_register_script( 'bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '2.1.4', true );
-  wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
+  //wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
   //wp_register_script( 'ddsmoothmenu-init', get_template_directory_uri().'/js/ddsmoothmenu-init.js', array('ddsmoothmenu'), '', true);
   //wp_register_script( 'pinterest', '//assets.pinterest.com/js/pinit.js', false, false, true );
   //wp_register_script( 'bootstrap-toolkit', get_template_directory_uri().'/js/bootstrap-toolkit.min.js', array('jquery'), '2.1.0', true );
@@ -180,8 +184,8 @@ function boot_load_javascript_files() {
   //wp_enqueue_script( 'jquery-ui-core' );
   //wp_enqueue_script( 'imagesLoaded' );
   //wp_enqueue_script( 'masonry' );
-  //wp_enqueue_script( 'thickbox' );
-  wp_enqueue_script( 'tether' );
+  wp_enqueue_script( 'popper' );
+  //wp_enqueue_script( 'tether' );
   wp_enqueue_script( 'bootstrap-js' );
   //wp_enqueue_script( 'vegas' );
   //wp_enqueue_script( 'pinterest' );

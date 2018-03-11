@@ -20,7 +20,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    
+
 <div class="container">
       <div class="row">
         <div class="col-md-12 header">
@@ -28,7 +28,7 @@
           <h5 class="site-description"><?php bloginfo('description'); ?></h5>
 
           <?php
-              
+
                          $menu_1_args = array(
                               'theme_location'  => 'main_menu',
                               'menu'            => 'main_menu',
@@ -45,13 +45,14 @@
                               'link_after'      => '',
                               'items_wrap'      => '<ul id="%1$s" class="%2$s" style="list-style-type: none;">%3$s</ul>',
                               'depth'           => 0,
-                              'walker'          => new wp_bootstrap_navwalker()
+                              /*'walker'          => new wp_bootstrap_navwalker()*/
+                              'walker'          => new bs4navwalker()
                          );
-                        
-                         wp_nav_menu( $menu_1_args );
-              
+
+                        wp_nav_menu( $menu_1_args );
+
                ?>
-        
+
         </div>
       </div>
     </div>

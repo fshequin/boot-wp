@@ -33,12 +33,13 @@
   ],
   "private": true,
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
-    "tether": "^1.4.0"
+    "bootstrap": "^4.0.0",
+    "tether": "^1.4.0",
+    "popper.js": "^1.12.9"
   },
   "resolutions": {
     "tether": "^1.4.0",
-    "bootstrap": "4.0.0-alpha.6"
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7"
