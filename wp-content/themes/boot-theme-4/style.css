@@ -3,7 +3,7 @@ Theme Name: Boot Theme 4
 Theme URI: http://btcny.com
 Author: Fred Shequine
 Author URI: http://btcny.com
-Description: Bootstrap 4 Alpha 6 based Custom theme for project.
+Description: Bootstrap 4 based Custom theme for project.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,17 +13,18 @@ Text Domain: btc
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* 
+/*
 
 /* Fonts & Mixins */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic");
+/* Fonts: */
 /* Colors: */
 /* borders */
 /* general site wide styles */
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333333;
 }
 
@@ -36,14 +37,14 @@ em {
 }
 
 a {
-  color: #0275d8;
+  color: #107107;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 a:hover {
   text-decoration: none;
-  color: #464a4c;
+  color: #999999;
 }
 
 /* header & navigation styles */
@@ -56,8 +57,12 @@ a:hover {
 }
 
 .nav-inline li > a {
-  padding: 10px 15px 10px 0px;
+  padding: 10px 25px 10px 0px;
   text-transform: uppercase;
+}
+
+.nav-inline .nav-link.active {
+  color: #159309;
 }
 
 /* Main styles */
@@ -67,7 +72,7 @@ a:hover {
 }
 
 .main-column .main .post-meta {
-  color: #464a4c;
+  color: #999999;
 }
 
 .site-title {
