@@ -4,7 +4,9 @@
   <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
     <title><?php wp_title(); ?></title>
     <!-- Bootstrap -->
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
