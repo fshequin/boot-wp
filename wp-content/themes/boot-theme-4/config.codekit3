@@ -9153,6 +9153,31 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/images\/favicon.icns": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/favicon.icns",
+		"oF": 0
+		},
+	"\/images\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/favicon.ico",
+		"oF": 0
+		},
+	"\/images\/favicon.png": {
+		"ft": 32768,
+		"iS": 7180,
+		"oA": 0,
+		"oAP": "\/images\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,

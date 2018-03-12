@@ -13,16 +13,12 @@ Text Domain: btc
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 // Core functions, mixins, variables for use in other things
 
 @import "../bower_components/bootstrap/scss/_functions.scss";
 @import "../bower_components/bootstrap/scss/_mixins.scss";
 @import "../bower_components/bootstrap/scss/_variables.scss";
-
-// Core Mixins
-//@import "mixins.less";
-
-/*
 
 /* Fonts & Mixins */
 
@@ -51,7 +47,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 //$font-family-sans-serif: 'Open Sans', sans-serif;
 $font-family-sans-serif: 'Roboto', sans-serif;
 //$font-family-sans-serif: 'Source Sans Pro', sans-serif;
-
 
 /* Colors: */
 
@@ -113,13 +108,18 @@ a:hover {
 /* Main styles */
 
 .main-column {
-
 	margin-top: 25px;
 	padding: 20px;
-
 	.main {
+		h1, h2, h3, h4 {
+			margin-bottom: 1rem;
+		}
 		.post-meta {
 			color: $gray;
+			margin-bottom: 1rem;
+		}
+		.wp-post-image {
+			margin-bottom: 1rem;
 		}
 	}
 }

@@ -13,7 +13,7 @@
           <?php
             $attr = array(
               'class' => "attachment-image img-responsive",
-              /*'alt' => trim(strip_tags( $attachment->post_excerpt )),
+              /*'alt' => trim(strip_tags( $attachment->post_title )),
               'title' => trim(strip_tags( $attachment->post_title )),*/
             );
 
@@ -29,7 +29,7 @@
         </div>
         </div>
         <div class="col-md-4 sidebar-column">
-          <?php dynamic_sidebar( 'news-sidebar' ); ?>
+          <?php dynamic_sidebar( 'page-sidebar' ); ?>
         </div>
       </div>
     </div>
