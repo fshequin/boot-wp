@@ -63,6 +63,11 @@ a:hover {
   color: #159309;
 }
 
+.nav-inline .dropdown-item:focus, .nav-inline .dropdown-item:hover {
+  color: #ffffff;
+  background-color: #107107;
+}
+
 .nav-inline .dropdown-item.active, .nav-inline .dropdown-item:active {
   background-color: #107107;
 }
