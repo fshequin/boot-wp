@@ -47,6 +47,7 @@ a:hover {
 
 /* header & navigation styles */
 .header {
+  padding-top: 30px;
   padding-left: 20px;
 }
 
