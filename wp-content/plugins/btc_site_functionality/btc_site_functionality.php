@@ -30,7 +30,7 @@ if ( !defined( 'WPINC' ) ) {
 	 */
 	function require_boot_metaboxes() {
 	    require WP_PLUGIN_DIR.'/btc_site_functionality/libs/metaboxes.php';
-	    
+
 	    if( !class_exists('cmb_Meta_Box'))
 	    {
 	        require WP_PLUGIN_DIR.'/btc_site_functionality/libs/metabox/init.php';
@@ -40,7 +40,7 @@ if ( !defined( 'WPINC' ) ) {
 	 * Initialize the CMB2 metabox class.
 	 */
 
-	function require_boot_cmb2_metaboxes() {	
+	function require_boot_cmb2_metaboxes() {
 		require WP_PLUGIN_DIR.'/btc_site_functionality/libs/metaboxes_cmb2.php';
 		require WP_PLUGIN_DIR.'/btc_site_functionality/libs/theme_options_cmb2.php'; // uncomment to activate
 	}
