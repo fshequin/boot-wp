@@ -7,7 +7,7 @@
 		"uuidString": "B155EAA3-2A0C-4CD6-9231-6C12E3406392"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/bootstrap-navwalker\/_notes\/dwsync.xml": {
 		"cB": 0,
@@ -6942,6 +6942,7 @@
 	"\/bower_components\/popper.js\/docs\/images\/banner.jpg": {
 		"ft": 16384,
 		"iS": 53439,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/popper.js\/docs\/images\/banner.jpg",
 		"oF": 0,
@@ -6974,6 +6975,7 @@
 	"\/bower_components\/popper.js\/docs\/images\/pic01.jpg": {
 		"ft": 16384,
 		"iS": 11352,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/popper.js\/docs\/images\/pic01.jpg",
 		"oF": 0,
@@ -6984,6 +6986,7 @@
 	"\/bower_components\/popper.js\/docs\/images\/pic02.jpg": {
 		"ft": 16384,
 		"iS": 9659,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/popper.js\/docs\/images\/pic02.jpg",
 		"oF": 0,
@@ -6994,6 +6997,7 @@
 	"\/bower_components\/popper.js\/docs\/images\/pic03.jpg": {
 		"ft": 16384,
 		"iS": 11124,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/popper.js\/docs\/images\/pic03.jpg",
 		"oF": 0,
@@ -7004,6 +7008,7 @@
 	"\/bower_components\/popper.js\/docs\/images\/pic04.jpg": {
 		"ft": 16384,
 		"iS": 2391,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/popper.js\/docs\/images\/pic04.jpg",
 		"oF": 0,
@@ -7014,6 +7019,7 @@
 	"\/bower_components\/popper.js\/docs\/images\/pic05.jpg": {
 		"ft": 16384,
 		"iS": 2273,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/popper.js\/docs\/images\/pic05.jpg",
 		"oF": 0,
@@ -9307,7 +9313,8 @@
 	"creationDate": 512430169,
 	"displayValue": "boot-theme-4",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_orange"
+	"iconImageName": "\/bower_components\/bootstrap\/assets\/img\/favicons\/apple-touch-icon.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -11110,6 +11117,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
