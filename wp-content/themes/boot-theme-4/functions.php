@@ -22,35 +22,9 @@
  * @since boot-wp 1.0
  */
 
-// link in the lib files
+/** Note: custom post types, custom taxonomies & metaboxes has been moved to the btc_site_functionality plugin */
 
-	//require TEMPLATEPATH.'/libs/post_types.php'; // uncomment to activate
-	//require TEMPLATEPATH.'/libs/taxonomies.php'; // uncomment to activate
-
-	//add_action('init', 'require_boot_metaboxes'); // uncomment to activate
-	//add_action('init', 'require_boot_cmb2_metaboxes'); // uncomment to activate
-
-	/**
-	 * Initialize the old CMB metabox class.
-	 */
-	/*function require_boot_metaboxes() {
-	    require TEMPLATEPATH.'/libs/metaboxes.php';
-
-	    if( !class_exists('cmb_Meta_Box'))
-	    {
-	        require TEMPLATEPATH.'/libs/metabox/init.php';
-	    }
-	}*/
-	/**
-	 * Initialize the CMB2 metabox class.
-	 */
-
-	/*function require_boot_cmb2_metaboxes() {
-		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
-		require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
-	}*/
-
-	require TEMPLATEPATH.'/libs/theme_default_setup.php';
+require TEMPLATEPATH.'/libs/theme_default_setup.php';
 
 function boot_setup() {
 

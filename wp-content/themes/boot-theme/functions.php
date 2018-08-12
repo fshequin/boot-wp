@@ -22,43 +22,17 @@
  * @since boot-wp 1.0
  */
 
-// link in the lib files
+/** Note: custom post types, custom taxonomies & metaboxes has been moved to the btc_site_functionality plugin */
 
-	//require TEMPLATEPATH.'/libs/post_types.php'; // uncomment to activate
-	//require TEMPLATEPATH.'/libs/taxonomies.php'; // uncomment to activate
-
-	//add_action('init', 'require_boot_metaboxes'); // uncomment to activate
-	//add_action('init', 'require_boot_cmb2_metaboxes'); // uncomment to activate
-
-	/**
-	 * Initialize the old CMB metabox class.
-	 */
-	/*function require_boot_metaboxes() {
-	    require TEMPLATEPATH.'/libs/metaboxes.php';
-	    
-	    if( !class_exists('cmb_Meta_Box'))
-	    {
-	        require TEMPLATEPATH.'/libs/metabox/init.php';
-	    }
-	}*/
-	/**
-	 * Initialize the CMB2 metabox class.
-	 */
-
-	/*function require_boot_cmb2_metaboxes() {	
-		require TEMPLATEPATH.'/libs/metaboxes_cmb2.php';
-		require TEMPLATEPATH.'/libs/theme_options_cmb2.php'; // uncomment to activate
-	}*/
-
-	require TEMPLATEPATH.'/libs/theme_default_setup.php';
+require TEMPLATEPATH.'/libs/theme_default_setup.php';
 
 function boot_setup() {
-	
+
 	//load_theme_textdomain( 'btc', get_template_directory() . '/languages' );
 	//add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', btc_fonts_url() ) );
 
 	// Remove some stuff we don't need
-	
+
 	remove_action('wp_head', 'wp_generator');
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'wlwmanifest_link');
@@ -75,7 +49,7 @@ function boot_setup() {
 	}
 
 	add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
-	
+
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -121,7 +95,7 @@ function boot_setup() {
 	        'your-custom-size' => __( 'Your Custom Size Name' ),
 	    ) );
 	}
-	
+
 	// This theme uses its own gallery styles.
 	//add_filter( 'use_default_gallery_style', '__return_false' );
 }
@@ -154,12 +128,12 @@ function boot_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
-	
+
 
 }
 add_action( 'widgets_init', 'boot_widgets_init' );
 
-// Register some javascript files, because we love javascript files. Enqueue a couple as well 
+// Register some javascript files, because we love javascript files. Enqueue a couple as well
 // wp_register_script( string $handle, string $src, array $deps = array(), string|bool|null $ver = false, bool $in_footer = false )
 
 function boot_load_javascript_files() {
