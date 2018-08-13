@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin
  */
 
@@ -13,13 +15,19 @@ final class WPSEO_Admin_Asset_Dev_Server_Location implements WPSEO_Admin_Asset_L
 	 * @var array
 	 */
 	private static $dev_server_script = array(
+		'analysis',
 		'commons',
 		'configuration-wizard',
+		'search-appearance',
 		'wp-seo-dashboard-widget',
 		'wp-seo-help-center',
 		'wp-seo-metabox',
+		'wp-seo-modal',
 		'wp-seo-post-scraper',
+		'wp-seo-replacevar-plugin',
 		'wp-seo-term-scraper',
+		'wp-seo-modal',
+		'wp-seo-wp-globals-backport',
 	);
 
 	/**
