@@ -76,28 +76,28 @@ function btc_register_custom_post_types() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
 	);
-	register_post_type( 'client', $args2 );
+	//register_post_type( 'client', $args2 );
 
 	// people post type
 
 	$labels3 = array(
-		'name'                => _x( 'People', 'Post Type General Name', 'tandem_domain' ),
-		'singular_name'       => _x( 'Person', 'Post Type Singular Name', 'tandem_domain' ),
-		'menu_name'           => __( 'People', 'tandem_domain' ),
-		'parent_item_colon'   => __( 'Parent Person:', 'tandem_domain' ),
-		'all_items'           => __( 'All people', 'tandem_domain' ),
-		'view_item'           => __( 'View Person', 'tandem_domain' ),
-		'add_new_item'        => __( 'Add New Person', 'tandem_domain' ),
-		'add_new'             => __( 'Add New', 'tandem_domain' ),
-		'edit_item'           => __( 'Edit Person', 'tandem_domain' ),
-		'update_item'         => __( 'Update Person', 'tandem_domain' ),
-		'search_items'        => __( 'Search Person', 'tandem_domain' ),
-		'not_found'           => __( 'Not found', 'tandem_domain' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'tandem_domain' ),
+		'name'                => _x( 'People', 'Post Type General Name', 'btc_domain' ),
+		'singular_name'       => _x( 'Person', 'Post Type Singular Name', 'btc_domain' ),
+		'menu_name'           => __( 'People', 'btc_domain' ),
+		'parent_item_colon'   => __( 'Parent Person:', 'btc_domain' ),
+		'all_items'           => __( 'All People', 'btc_domain' ),
+		'view_item'           => __( 'View Person', 'btc_domain' ),
+		'add_new_item'        => __( 'Add New Person', 'btc_domain' ),
+		'add_new'             => __( 'Add New', 'btc_domain' ),
+		'edit_item'           => __( 'Edit Person', 'btc_domain' ),
+		'update_item'         => __( 'Update Person', 'btc_domain' ),
+		'search_items'        => __( 'Search Person', 'btc_domain' ),
+		'not_found'           => __( 'Not found', 'btc_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'btc_domain' ),
 	);
 	$args3 = array(
-		'label'               => __( 'people', 'tandem_domain' ),
-		'description'         => __( 'tandem people', 'tandem_domain' ),
+		'label'               => __( 'People', 'btc_domain' ),
+		'description'         => __( 'Project People', 'btc_domain' ),
 		'labels'              => $labels3,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes', 'post-formats', ),
 		'hierarchical'        => false,
