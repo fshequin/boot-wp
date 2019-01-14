@@ -2,10 +2,6 @@ import getSupportedPropertyName from '../utils/getSupportedPropertyName';
 import find from '../utils/find';
 import getOffsetParent from '../utils/getOffsetParent';
 import getBoundingClientRect from '../utils/getBoundingClientRect';
-import getRoundedOffsets from '../utils/getRoundedOffsets';
-import isBrowser from '../utils/isBrowser';
-
-const isFirefox = isBrowser && /Firefox/i.test(navigator.userAgent);
 
 /**
  * @function
@@ -41,10 +37,13 @@ export default function computeStyle(data, options) {
     position: popper.position,
   };
 
-  const offsets = getRoundedOffsets(
-    data,
-    window.devicePixelRatio < 2 || !isFirefox
-  );
+  // floor sides to avoid blurry text
+  const offsets = {
+    left: Math.floor(popper.left),
+    top: Math.floor(popper.top),
+    bottom: Math.floor(popper.bottom),
+    right: Math.floor(popper.right),
+  };
 
   const sideA = x === 'bottom' ? 'top' : 'bottom';
   const sideB = y === 'right' ? 'left' : 'right';
@@ -65,22 +64,12 @@ export default function computeStyle(data, options) {
   // its bottom.
   let left, top;
   if (sideA === 'bottom') {
-    // when offsetParent is <html> the positioning is relative to the bottom of the screen (excluding the scrollbar)
-    // and not the bottom of the html element
-    if (offsetParent.nodeName === 'HTML') {
-      top = -offsetParent.clientHeight + offsets.bottom;
-    } else {
-      top = -offsetParentRect.height + offsets.bottom;
-    }
+    top = -offsetParentRect.height + offsets.bottom;
   } else {
     top = offsets.top;
   }
   if (sideB === 'right') {
-    if (offsetParent.nodeName === 'HTML') {
-      left = -offsetParent.clientWidth + offsets.right;
-    } else {
-      left = -offsetParentRect.width + offsets.right;
-    }
+    left = -offsetParentRect.width + offsets.right;
   } else {
     left = offsets.left;
   }

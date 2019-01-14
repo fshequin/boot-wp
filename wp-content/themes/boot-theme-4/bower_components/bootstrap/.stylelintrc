@@ -1,15 +1,13 @@
 {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-recommended-scss"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
   "plugins": [
     "stylelint-order"
   ],
   "rules": {
-    "at-rule-empty-line-before": null,
+    "at-rule-empty-line-before": [null,
+      "except": ["first-nested"]
+    ],
     "at-rule-name-space-after": "always",
-    "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-space-before": "never",
     "block-closing-brace-empty-line-before": null,
@@ -22,27 +20,12 @@
     "declaration-empty-line-before": null,
     "declaration-no-important": true,
     "font-family-name-quotes": "always-where-recommended",
-    "font-weight-notation": [
-      "numeric",
-      {
-        "ignore": [
-          "relative"
-        ]
-      }
-    ],
+    "font-weight-notation": "numeric",
     "function-url-no-scheme-relative": true,
     "function-url-quotes": "always",
     "length-zero-no-unit": true,
     "max-empty-lines": 2,
     "max-line-length": null,
-    "media-feature-name-no-unknown": [
-      true,
-      {
-        "ignoreMediaFeatureNames": [
-          "prefers-reduced-motion"
-        ]
-      }
-    ],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-parentheses-space-inside": "never",
     "media-feature-range-operator-space-after": "always",
@@ -65,11 +48,9 @@
       "flex-direction",
       "flex-wrap",
       "flex-flow",
-      "flex-shrink",
       "flex-grow",
       "flex-order",
       "flex-pack",
-      "align-content",
       "align-items",
       "align-self",
       "justify-content",
@@ -98,18 +79,6 @@
       "-ms-overflow-x",
       "-ms-overflow-y",
       "-ms-overflow-style",
-      "columns",
-      "column-count",
-      "column-fill",
-      "column-gap",
-      "column-rule",
-      "column-rule-width",
-      "column-rule-style",
-      "column-rule-color",
-      "column-span",
-      "column-width",
-      "orphans",
-      "widows",
       "clip",
       "clear",
       "font",
@@ -125,7 +94,6 @@
       "font-emphasize-position",
       "font-emphasize-style",
       "font-smooth",
-      "src",
       "hyphens",
       "line-height",
       "color",
@@ -158,8 +126,6 @@
       "tab-size",
       "white-space",
       "vertical-align",
-      "direction",
-      "unicode-bidi",
       "list-style",
       "list-style-position",
       "list-style-type",
@@ -237,9 +203,6 @@
       "box-shadow",
       "opacity",
       "-ms-interpolation-mode",
-      "page-break-after",
-      "page-break-before",
-      "page-break-inside",
       "transition",
       "transition-delay",
       "transition-timing-function",
@@ -247,8 +210,6 @@
       "transition-property",
       "transform",
       "transform-origin",
-      "perspective",
-      "appearance",
       "animation",
       "animation-name",
       "animation-duration",
@@ -256,45 +217,11 @@
       "animation-timing-function",
       "animation-delay",
       "animation-iteration-count",
-      "animation-direction",
-      "animation-fill-mode",
-      "fill",
-      "stroke"
+      "animation-direction"
     ],
-    "property-blacklist": ["transition"],
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": null,
-    "scss/at-function-named-arguments": "never",
-    "scss/at-function-parentheses-space-before": "never",
-    "scss/at-import-no-partial-leading-underscore": true,
-    "scss/at-mixin-argumentless-call-parentheses": null,
-    "scss/at-mixin-named-arguments": null,
-    "scss/at-mixin-parentheses-space-before": "never",
-    "scss/at-rule-no-unknown": true,
-    "scss/dollar-variable-colon-space-after": "at-least-one-space",
-    "scss/dollar-variable-colon-space-before": "never",
-    "scss/dollar-variable-default": [
-      true,
-      {
-        "ignore": "local"
-      }
-    ],
-    "scss/dollar-variable-no-missing-interpolation": true,
-    "scss/media-feature-value-dollar-variable": null,
-    "scss/no-duplicate-dollar-variables": [
-      null,
-      {
-        "ignoreInsideAtRules": [
-          "if",
-          "mixin"
-        ]
-      }
-    ],
-    "scss/operator-no-newline-after": true,
-    "scss/operator-no-newline-before": true,
-    "scss/operator-no-unspaced": true,
     "selector-attribute-quotes": "always",
-    "selector-class-pattern": "^[a-z][a-z0-9\\-]*[a-z0-9]$",
     "selector-list-comma-newline-after": "always",
     "selector-list-comma-newline-before": "never-multi-line",
     "selector-list-comma-space-after": "always-single-line",
@@ -310,7 +237,6 @@
     "selector-max-universal": 1,
     "selector-no-qualifying-type": true,
     "selector-no-vendor-prefix": true,
-    "shorthand-property-no-redundant-values": true,
     "string-quotes": "double",
     "value-keyword-case": "lower",
     "value-list-comma-newline-after": "never-multi-line",

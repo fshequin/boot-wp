@@ -1,18 +1,11 @@
 {
   "env": {
     "es6": false,
-    "jquery": true,
-    "qunit": true
+    "qunit": true,
+    "jquery": true
   },
   "globals": {
-    "bootstrap": false,
-    "sinon": false,
-    "Util": false,
-    "Alert": false,
-    "Button": false,
-    "Carousel": false,
-    "Simulator": false,
-    "Toast": false
+    "Util": false
   },
   "parserOptions": {
     "ecmaVersion": 5,
@@ -20,7 +13,7 @@
   },
   "extends": "../../../.eslintrc.json",
   "rules": {
-    "no-console": "error",
+    "no-console": "off",
     // Best Practices
     "consistent-return": "off",
     "no-magic-numbers": "off",

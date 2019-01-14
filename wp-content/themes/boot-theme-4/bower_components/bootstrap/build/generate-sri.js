@@ -12,12 +12,10 @@
 
 'use strict'
 
-const crypto = require('crypto')
 const fs = require('fs')
 const path = require('path')
+const sriToolbox = require('sri-toolbox')
 const sh = require('shelljs')
-
-const pkg = require('../package.json')
 
 sh.config.fatal = true
 
@@ -36,15 +34,11 @@ const files = [
     configPropertyName: 'js_hash'
   },
   {
-    file: `site/docs/${pkg.version_short}/assets/js/vendor/jquery-slim.min.js`,
+    file: 'assets/js/vendor/jquery-slim.min.js',
     configPropertyName: 'jquery_hash'
   },
   {
-    file: 'dist/js/bootstrap.bundle.min.js',
-    configPropertyName: 'js_bundle_hash'
-  },
-  {
-    file: 'node_modules/popper.js/dist/umd/popper.min.js',
+    file: 'assets/js/vendor/popper.min.js',
     configPropertyName: 'popper_hash'
   }
 ]
@@ -55,9 +49,9 @@ files.forEach((file) => {
       throw err
     }
 
-    const algo = 'sha384'
-    const hash = crypto.createHash(algo).update(data, 'utf8').digest('base64')
-    const integrity = `${algo}-${hash}`
+    const integrity = sriToolbox.generate({
+      algorithms: ['sha384']
+    }, data)
 
     console.log(`${file.configPropertyName}: ${integrity}`)
 

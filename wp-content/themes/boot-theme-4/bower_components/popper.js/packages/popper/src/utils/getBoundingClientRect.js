@@ -3,7 +3,7 @@ import getBordersSize from './getBordersSize';
 import getWindowSizes from './getWindowSizes';
 import getScroll from './getScroll';
 import getClientRect from './getClientRect';
-import isIE from './isIE';
+import isIE10 from './isIE10';
 
 /**
  * Get bounding client rect of given element
@@ -18,8 +18,8 @@ export default function getBoundingClientRect(element) {
   // IE10 10 FIX: Please, don't ask, the element isn't
   // considered in DOM in some circumstances...
   // This isn't reproducible in IE10 compatibility mode of IE11
-  try {
-    if (isIE(10)) {
+  if (isIE10()) {
+    try {
       rect = element.getBoundingClientRect();
       const scrollTop = getScroll(element, 'top');
       const scrollLeft = getScroll(element, 'left');
@@ -27,12 +27,10 @@ export default function getBoundingClientRect(element) {
       rect.left += scrollLeft;
       rect.bottom += scrollTop;
       rect.right += scrollLeft;
-    }
-    else {
-      rect = element.getBoundingClientRect();
-    }
+    } catch (err) {}
+  } else {
+    rect = element.getBoundingClientRect();
   }
-  catch(e){}
 
   const result = {
     left: rect.left,
@@ -42,7 +40,7 @@ export default function getBoundingClientRect(element) {
   };
 
   // subtract scrollbar size from sizes
-  const sizes = element.nodeName === 'HTML' ? getWindowSizes(element.ownerDocument) : {};
+  const sizes = element.nodeName === 'HTML' ? getWindowSizes() : {};
   const width =
     sizes.width || element.clientWidth || result.right - result.left;
   const height =

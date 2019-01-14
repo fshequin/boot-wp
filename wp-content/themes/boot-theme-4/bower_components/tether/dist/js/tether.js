@@ -1,14 +1,14 @@
-/*! tether 1.4.4 */
+/*! tether 1.4.3 */
 
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define([], factory);
+    define(factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory();
+    module.exports = factory(require, exports, module);
   } else {
     root.Tether = factory();
   }
-}(this, function() {
+}(this, function(require, exports, module) {
 
 'use strict';
 

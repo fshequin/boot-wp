@@ -1,6 +1,6 @@
 {
   "name": "popper.js",
-  "version": "1.14.6",
+  "version": "1.12.9",
   "description": "A kickass library to manage your poppers",
   "homepage": "https://popper.js.org",
   "repository": {
@@ -32,10 +32,9 @@
     "postpublish": "nuget-publish && ./bower-publish.sh",
     "prebuild": "yarn lint",
     "pretest": "yarn lint",
-    "build": "node bundle.js && cp index.js.flow dist/umd/poppper.js.flow",
+    "build": "node bundle.js",
     "lint": "eslint .",
     "test": "popper-karma",
-    "posttest": "tsc --project tests/types/tsconfig.json",
     "test:dev": "BROWSERS=Chrome NODE_ENV=development yarn test",
     "coverage": "COVERAGE=true yarn test"
   },
@@ -45,8 +44,7 @@
     "@popperjs/test": "^1.0.0",
     "@popperjs/test-utils": "^1.0.0",
     "eslint": "^4.1.1",
-    "nuget-publish": "^1.0.3",
-    "typescript": "^2.7.1"
+    "nuget-publish": "^1.0.3"
   },
   "resolutions": {
     "micromatch": "^3.0.3"

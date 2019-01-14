@@ -146,7 +146,7 @@ function boot_load_javascript_files() {
   //wp_register_script( 'popper', get_template_directory_uri().'/bower_components/popper.js/dist/umd/popper.min.js', array(''), '1.12.9', true );
   wp_register_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), '1.12.9', true );
   //wp_register_script( 'tether', get_template_directory_uri().'/bower_components/tether/dist/js/tether.min.js', array('jquery'), '1.1.0', true );
-  wp_register_script( 'bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '4.2.1', true );
+  wp_register_script( 'bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '4.0.0', true );
   //wp_register_script( 'vegas', get_template_directory_uri().'/js/vegas/jquery.vegas.min.js', array('jquery'), false, true );
   //wp_register_script( 'ddsmoothmenu-init', get_template_directory_uri().'/js/ddsmoothmenu-init.js', array('ddsmoothmenu'), '', true);
   //wp_register_script( 'pinterest', '//assets.pinterest.com/js/pinit.js', false, false, true );
