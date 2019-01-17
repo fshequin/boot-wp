@@ -139,6 +139,8 @@ add_action( 'widgets_init', 'boot_widgets_init' );
 
 function boot_load_javascript_files() {
 
+  //wp_register_script( string $handle, string $src, array $deps = array(), string|bool|null $ver = false, bool $in_footer = false )
+  //
   //wp_register_script( 'info-caroufredsel', get_template_directory_uri() . '/js/jquery.carouFredSel-5.5.0-packed.js', array('jquery'), '5.5.0', true );
   //wp_register_script( 'info-carousel-instance', get_template_directory_uri() . '/js/info-carousel-instance.js', array('info-caroufredsel'), '1.0', true );
   //wp_register_script( 'imagesLoaded', get_template_directory_uri().'/js/imagesLoaded.min.js', array('jquery'), false, true );
