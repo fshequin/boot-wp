@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       BTC Functionality Plugin
  * Plugin URI:        http://btcny.com/btc-site-functionality/
- * Description:       This plugin is used to modularize non-theme specific functionality for your Wordpress site. Custom Post Types, Custom Taxonomies, CMB2 metaboxes & CMB2 Theme Options. Always leave this plugin activated or follow the instructions from BTC.
+ * Description:       This plugin is used to modularize non-theme specific functionality for your Wordpress site. Custom Post Types, Custom Taxonomies. Always leave this plugin activated or follow the instructions from BTC.
  * Version:           1.0.0
  * Author:            Fred Shequine
  * Author URI:        http://btcny.com/
@@ -22,8 +22,8 @@ if ( !defined( 'WPINC' ) ) {
 	//require WP_PLUGIN_DIR.'/btc_site_functionality/libs/post_types.php';
 	//require WP_PLUGIN_DIR.'/btc_site_functionality/libs/taxonomies.php';
 
-	//add_action('init', 'require_boot_metaboxes');  // old cmb class
-	//add_action('init', 'require_boot_cmb2_metaboxes'); // new cmb2 class
+	//add_action('init', 'require_boot_metaboxes');  // old cmb class // don't use
+	//add_action('init', 'require_boot_cmb2_metaboxes'); // new cmb2 class  // don't use
 
 	/**
 	 * Initialize the old CMB metabox class.
