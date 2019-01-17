@@ -22,8 +22,8 @@ if ( !defined( 'WPINC' ) ) {
 	//require WP_PLUGIN_DIR.'/btc_site_functionality/libs/post_types.php';
 	//require WP_PLUGIN_DIR.'/btc_site_functionality/libs/taxonomies.php';
 
-	//add_action('init', 'require_boot_metaboxes');  // old cmb class // (don't use, conflicts with Royal Slider *js problem* FGS 1-16-2019)
-	//add_action('init', 'require_boot_cmb2_metaboxes'); // new cmb2 class  // (don't use, conflicts with Royal Slider *js problem* FGS 1-16-2019)
+	//add_action('init', 'require_boot_metaboxes');  // old cmb class // (don't use, conflicts with Royal Slider *backend js problem* FGS 1-16-2019)
+	//add_action('init', 'require_boot_cmb2_metaboxes'); // new cmb2 class  // (don't use, conflicts with Royal Slider *backend js problem* FGS 1-16-2019)
 
 	/**
 	 * Initialize the old CMB metabox class.
