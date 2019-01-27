@@ -83,7 +83,13 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.main-column .main .post-title {
+  color: #107107;
+  font-size: 2rem;
+}
+
 .main-column .main .post-meta {
+  font-size: 1.25rem;
   color: #999999;
   margin-bottom: 1rem;
 }
@@ -102,7 +108,15 @@ a:hover {
 }
 
 /* sidebar styles */
+.sidebar-column {
+  margin-top: 50px;
+}
+
 .sidebar-column h3 {
+  font-size: 1.35rem;
+}
+
+.sidebar-column .widget-title {
   font-size: 1.35rem;
 }
 

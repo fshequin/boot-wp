@@ -6,8 +6,8 @@
         <div class="main">
           <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
-          <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <h5 class="post-meta"><?php the_time('F j, Y'); ?></h5>
+          <h3 class="post-title"><?php the_title(); ?></h3>
+          <h4 class="post-meta"><?php the_time('F j, Y'); ?></h4>
 
           <?php
             $attr = array(

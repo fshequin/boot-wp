@@ -122,7 +122,12 @@ a:hover {
 		h1, h2, h3, h4 {
 			margin-bottom: 1rem;
 		}
+		.post-title {
+			color: $brand-primary;
+			font-size: 2rem;
+		}
 		.post-meta {
+			font-size: 1.25rem;
 			color: $gray;
 			margin-bottom: 1rem;
 		}
@@ -142,7 +147,11 @@ a:hover {
 /* sidebar styles */
 
 .sidebar-column {
+	margin-top: 50px;
 	h3 {
+		font-size: 1.35rem;
+	}
+	.widget-title {
 		font-size: 1.35rem;
 	}
 	.input-group {

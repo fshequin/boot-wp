@@ -116,8 +116,8 @@ function boot_widgets_init() {
 		'description'   => __( 'Appears in left sidebar of Site.', 'boot' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 
 	register_sidebar( array(
@@ -126,8 +126,8 @@ function boot_widgets_init() {
 		'description'   => __( 'Appears in left sidebar of Pages', 'boot' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 
 

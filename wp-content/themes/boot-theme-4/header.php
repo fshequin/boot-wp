@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
   <head>
   <!-- Required meta tags always come first -->
     <meta charset="utf-8">
