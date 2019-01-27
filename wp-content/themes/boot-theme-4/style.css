@@ -97,6 +97,10 @@ a:hover {
   padding: 0 0 0 0;
 }
 
+.site-description {
+  font-size: 1.25rem;
+}
+
 /* sidebar styles */
 .sidebar-column h3 {
   font-size: 1.35rem;
