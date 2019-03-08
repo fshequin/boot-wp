@@ -26,18 +26,26 @@
 <div class="container">
       <div class="row">
         <div class="col-md-12 header">
-          <h1 class="site-title"><a href="/"><?php bloginfo('name'); ?></a></h1>
-          <h2 class="site-description"><?php bloginfo('description'); ?></h2>
+			<h1 class="site-title"><a href="/"><?php bloginfo('name'); ?></a></h1>
+			<h2 class="site-description"><?php bloginfo('description'); ?></h2>
 
-          <?php
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="nav-title d-sm-block d-lg-none ml-auto" href="#">menu</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<?php
 
                          $menu_1_args = array(
                               'theme_location'  => 'main_menu',
                               'menu'            => 'main_menu',
-                              'container'       => 'div',
-                              'container_class' => 'menu-wrapper',
+                              'container'       => '',
+                              'container_class' => '',
                               'container_id'    => '',
-                              'menu_class'      => 'nav nav-inline',
+                              'menu_class'      => 'navbar-nav mr-auto',
                               'menu_id'         => '',
                               'echo'            => true,
                               'fallback_cb'     => 'wp_page_menu',
@@ -54,6 +62,10 @@
                         wp_nav_menu( $menu_1_args );
 
                ?>
+				</div>
+			</nav>
+
+
 
         </div>
       </div>

@@ -92,11 +92,32 @@ a:hover {
 	padding-top: 30px;
 	padding-left: 20px;
 }
-.menu-wrapper {
-	border-bottom: 1px solid $gray-lighter;
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+	background-color: transparent;
+	.nav-title {
+		margin-right: 20px;
+	}
+	.navbar-toggler {
+	    border-color: transparent;
+	}
+	.navbar-toggler:focus,
+	.navbar-toggler-icon:focus {
+		outline-color: $white;
+	    border-color: transparent;
+	}
+	.navbar-toggler:hover, .navbar-toggler.collapsed {
+		transform: rotate(180deg);
+		//transform: translate(0px, 5px);
+		//transform: skewX(20deg);
+		transition: transform .2s ease-in-out;
+	}
 }
-.nav-inline {
-	li>a {
+.navbar-nav {
+	.nav-link {
 		padding: 10px 25px 10px 0px;
 		text-transform: uppercase;
 		//width: 150px;
@@ -181,48 +202,16 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .alignleft { float: left; }
 .aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
+/*import Royal Slider Styles*/
 
-/* Media Queries */
+//@import "_royal-slider.scss";
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+/*import gravity forms styles*/
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+//@import "_gravity.scss";
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+/*import Responsive Styles*/
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@import "_responsive.scss";
 
 
-// We occasionally use media queries that go in the other direction
-// (the given screen size or smaller):
-
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) {
-	.navbar .container {
-		width: 100%;
-	}
-	.navbar button {
-		position: absolute;
-		right: 5px;
-	}
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px) {}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991px) {}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199px) {}
-
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
