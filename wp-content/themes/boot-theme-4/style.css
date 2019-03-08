@@ -69,11 +69,20 @@ a:hover {
 
 .navbar .navbar-toggler:focus,
 .navbar .navbar-toggler-icon:focus {
-  outline-color: #ffffff;
+  outline: none;
   border-color: transparent;
 }
 
-.navbar .navbar-toggler:hover, .navbar .navbar-toggler.collapsed {
+.navbar .navbar-toggler:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.navbar .navbar-toggler.collapsed .navbar-toggler-icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: -webkit-transform .2s ease-in-out;
