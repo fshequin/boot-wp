@@ -78,6 +78,7 @@ function boot_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'main_menu', __( 'main_menu', 'boot-wp' ) );
+	register_nav_menu( 'footer_menu', __( 'footer_menu', 'boot-wp' ) );
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
