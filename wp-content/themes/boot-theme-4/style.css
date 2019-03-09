@@ -60,35 +60,49 @@ a:hover {
 }
 
 .navbar .nav-title {
-  margin-right: 20px;
-}
-
-.navbar .navbar-toggler {
-  border-color: transparent;
-}
-
-.navbar .navbar-toggler:focus,
-.navbar .navbar-toggler-icon:focus {
-  outline: none;
-  border-color: transparent;
+  font-size: 14px;
+  margin-right: 5px;
+  float: left;
+  position: relative;
+  top: 5px;
 }
 
 .navbar .navbar-toggler:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  color: #f95e0b;
 }
 
-.navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+.navbar .navbar-toggler:hover span, .navbar .navbar-toggler:hover i {
+  color: #f95e0b;
+}
+
+.navbar .navbar-toggler {
+  padding: 0;
+  margin-left: auto;
+  border: none;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+  /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+.navbar .navbar-toggler i {
+  font-size: 26px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navbar .navbar-toggler i:hover, .navbar .navbar-toggler i:active, .navbar .navbar-toggler i:focus, .navbar .navbar-toggler button:hover, .navbar .navbar-toggler button:active, .navbar .navbar-toggler button:focus {
+  cursor: pointer;
+}
+
+.navbar .navbar-toggler.collapsed i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .navbar-nav .nav-link {
