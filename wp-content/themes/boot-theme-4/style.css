@@ -47,7 +47,7 @@ a:hover {
 
 /* header & navigation styles */
 .header {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 
@@ -220,6 +220,10 @@ img.aligncenter {
 /*import Responsive Styles*/
 /* Media Queries */
 @media (min-width: 992px) {
+  .header {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
   .navbar {
     border-bottom: 1px solid #eceeef;
   }
