@@ -60,7 +60,7 @@
     "objectcache.debug": "0",
     "objectcache.enabled_for_wp_admin": "1",
     "objectcache.fallback_transients": "1",
-    "objectcache.engine": "memcached",
+    "objectcache.engine": "file",
     "objectcache.file.gc": "3600",
     "objectcache.file.locking": false,
     "objectcache.memcached.servers": [
