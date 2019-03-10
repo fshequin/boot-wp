@@ -1,5 +1,7 @@
 var gfieldmap = function( options ) {
 	
+	var self = this;
+	
 	self.options = options;
 	self.UI = jQuery( '#gaddon-setting-row-'+ self.options.fieldName );
 	
@@ -17,14 +19,15 @@ var gfieldmap = function( options ) {
 		
 		self.UI.on( 'change', 'select[name="_gaddon_setting_'+ self.options.keyFieldName +'"]', function() {
 
-			var $select = jQuery( this ),
-				$input  = $select.next( '.custom-key-container' );
+			var $select    = jQuery( this ),
+				$selectElm = $select.data( 'chosen' ) ? $select.siblings( '.chosen-container' ) : ( $select.data( 'select2' ) ? $select.siblings( '.select2-container' ) : $select ),
+				$input     = $select.siblings( '.custom-key-container' );
 
 			if( $select.val() != 'gf_custom' ) {
 				return;
 			}
 
-			$select.fadeOut( function() {
+			$selectElm.fadeOut( function() {
 				$input.fadeIn().focus();
 			} );
 
@@ -34,13 +37,15 @@ var gfieldmap = function( options ) {
 
 			event.preventDefault();
 
-			var $reset  = jQuery( this ),
-				$input  = $reset.parents( '.custom-key-container' ),
-				$select = $input.prev( 'select.key' );
+			var $reset     = jQuery( this ),
+				$input     = $reset.parents( '.custom-key-container' ),
+				$select    = $input.siblings( 'select.key' ),
+				$selectElm = $select.data( 'chosen' ) ? $select.siblings( '.chosen-container' ) : ( $select.data( 'select2' ) ? $select.siblings( '.select2-container' ) : $select );
 
 			$input.fadeOut( function() {
 				$input.find( 'input' ).val( '' ).change();
-				$select.fadeIn().focus().val( '' );
+				$select.val( '' ).trigger( 'change' );
+				$selectElm.fadeIn().focus();
 			} );
 
 		} );
@@ -62,7 +67,7 @@ var gfieldmap = function( options ) {
 		self.data = jQuery.parseJSON( jQuery( '#' + self.options.fieldId ).val() );
 		
 		if ( ! self.data ) {
-			data = [ {
+			self.data = [ {
 				key: '',
 				value: '',
 				custom_key: ''
@@ -72,13 +77,21 @@ var gfieldmap = function( options ) {
 	}
 	
 	self.setupRepeater = function() {
+
+		var limit;
+		if (self.options.limit > 0){
+			limit = self.options.limit;
+		}
+		else{
+			limit = 0;
+		}
 		
 		self.UI.find( 'tbody.repeater' ).repeater( {
 			
-			limit:              0,
+			limit:              limit,
 			items:              self.data,
-			addButtonMarkup:    '<img src="'+ self.options.baseURL +'/images/add.png" style="cursor:pointer;" />',
-			removeButtonMarkup: '<img src="'+ self.options.baseURL +'/images/remove.png" style="cursor:pointer;" />',
+			addButtonMarkup:    '<span>+</span>',
+			removeButtonMarkup: '<span>-</span>',
 			callbacks:          {
 				add:  function( obj, $elem, item ) {
 					
@@ -89,6 +102,8 @@ var gfieldmap = function( options ) {
 					} else {
 						$elem.find( '.key' ).hide();
 					}
+					
+					gform.doAction( 'gform_fieldmap_add_row', obj, $elem, item );
 					
 				},
 				save: function( obj, data ) {
@@ -105,7 +120,7 @@ var gfieldmap = function( options ) {
 						delete data[i].custom_key;
 						
 					}
-					
+										
 					jQuery( '#'+ self.options.fieldId ).val( jQuery.toJSON( data ) );
 					
 				}

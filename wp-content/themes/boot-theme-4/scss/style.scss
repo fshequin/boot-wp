@@ -57,6 +57,7 @@ $gray-green: lighten(#107107, 0%);
 $gray-lighter: #eceeef;
 
 $brand-primary: $gray-green;
+$brand-secondary: $gray-green;
 $orange: rgba(249, 94, 11, 1.00);
 /* borders */
 
@@ -230,7 +231,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 /*import gravity forms styles*/
 
-//@import "_gravity.scss";
+@import "_gravity.scss";
 
 /*import Responsive Styles*/
 
