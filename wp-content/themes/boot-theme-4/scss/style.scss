@@ -51,13 +51,21 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 /* Colors: */
 
 $white: #ffffff;
-$black: #333333;
-$gray: #999999;
+$blacker: #333333;
+$black: #222222;
+$gray: #666666;
 $gray-green: lighten(#107107, 0%);
 $gray-lighter: #eceeef;
+$gray-darker: #555555;
 
+$blue-green: #0d93b4;
+
+
+/* bootstrap overides */
 $brand-primary: $gray-green;
 $brand-secondary: $gray-green;
+$navbar-light-color: #c90813;
+
 $orange: rgba(249, 94, 11, 1.00);
 /* borders */
 
@@ -94,7 +102,7 @@ a:hover {
 	padding-top: 10px;
 	padding-left: 20px;
 }
-.navbar {
+.navbar-light {
 	padding-left: 0;
 	padding-right: 0;
 	padding-bottom: 0;
@@ -138,25 +146,42 @@ a:hover {
 			transition: all .2s ease-in-out;
 		}
 	}
-}
-.navbar-nav {
-	.nav-link {
-		padding: 10px 25px 10px 0px;
-		text-transform: uppercase;
-		//width: 150px;
-	}
-	.nav-link.active {
-		color: lighten($gray-green, 7%);
-	}
-	.dropdown-item:focus, .dropdown-item:hover {
-		color: $white;
-	    background-color: lighten($gray-green, 0%);
-	}
-	.dropdown-item.active, .dropdown-item:active {
-	    background-color: $gray-green;
+	.navbar-nav {
+		.nav-link {
+			padding: 10px 25px 10px 0px;
+			text-transform: uppercase;
+			color: $black ;
+			//width: 150px;
+			&:hover {
+				color: darken($blue-green, 10%);
+			}
+		}
+		.nav-link.active {
+			color: $brand-primary;
+		}
+		.dropdown-item:focus, .dropdown-item:hover {
+			color: $white;
+		    background-color: lighten($gray-green, 0%);
+		}
+		.dropdown-item.active, .dropdown-item:active {
+		    background-color: $gray-green;
+		}
 	}
 }
 
+
+/*.navbar-light .navbar-nav .nav-link {
+     color: $black;
+     &:hover {
+     	color: lighten($black, 20%);
+     }
+}
+.navbar-light .navbar-nav .nav-link:active {
+     color: $black;
+     &:hover {
+     	color: lighten($black, 20%);
+     }
+}*/
 /* Main styles */
 
 .main-column {
@@ -192,6 +217,9 @@ a:hover {
 
 .sidebar-column {
 	margin-top: 50px;
+	a:hover {
+		text-decoration: underline;
+	}
 	h3 {
 		font-size: 1.35rem;
 	}
@@ -236,5 +264,3 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 /*import Responsive Styles*/
 
 @import "_responsive.scss";
-
-

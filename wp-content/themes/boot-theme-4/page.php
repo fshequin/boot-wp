@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-8 main-column">
 
-        <div class="main">
+        <main class="main">
           <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
           <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -26,11 +26,13 @@
 
           <?php endwhile; ?>
           <?php endif; ?>
+
+        </main>
+
         </div>
-        </div>
-        <div class="col-md-4 sidebar-column">
+        <aside class="col-md-4 sidebar-column">
           <?php dynamic_sidebar( 'page-sidebar' ); ?>
-        </div>
+        </aside>
       </div>
     </div>
 

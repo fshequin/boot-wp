@@ -19,11 +19,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic");
 /* Fonts: */
 /* Colors: */
+/* bootstrap overides */
 /* borders */
 /* general site wide styles */
 body {
   font-family: "Roboto", sans-serif;
-  color: #333333;
+  color: #222222;
 }
 
 strong {
@@ -42,7 +43,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #999999;
+  color: #666666;
 }
 
 /* header & navigation styles */
@@ -51,7 +52,7 @@ a:hover {
   padding-left: 20px;
 }
 
-.navbar {
+.navbar-light {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -59,7 +60,7 @@ a:hover {
   background-color: transparent;
 }
 
-.navbar .nav-title {
+.navbar-light .nav-title {
   font-size: 14px;
   margin-right: 5px;
   float: left;
@@ -67,26 +68,26 @@ a:hover {
   top: 5px;
 }
 
-.navbar .navbar-toggler:hover {
+.navbar-light .navbar-toggler:hover {
   color: #f95e0b;
 }
 
-.navbar .navbar-toggler:hover span, .navbar .navbar-toggler:hover i {
+.navbar-light .navbar-toggler:hover span, .navbar-light .navbar-toggler:hover i {
   color: #f95e0b;
 }
 
-.navbar .navbar-toggler {
+.navbar-light .navbar-toggler {
   padding: 0;
   margin-left: auto;
   border: none;
 }
 
-.navbar .navbar-toggler:focus {
+.navbar-light .navbar-toggler:focus {
   outline: none;
   /* outline: 5px auto -webkit-focus-ring-color; */
 }
 
-.navbar .navbar-toggler i {
+.navbar-light .navbar-toggler i {
   font-size: 26px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -94,35 +95,52 @@ a:hover {
   transition: all .2s ease-in-out;
 }
 
-.navbar .navbar-toggler i:hover, .navbar .navbar-toggler i:active, .navbar .navbar-toggler i:focus, .navbar .navbar-toggler button:hover, .navbar .navbar-toggler button:active, .navbar .navbar-toggler button:focus {
+.navbar-light .navbar-toggler i:hover, .navbar-light .navbar-toggler i:active, .navbar-light .navbar-toggler i:focus, .navbar-light .navbar-toggler button:hover, .navbar-light .navbar-toggler button:active, .navbar-light .navbar-toggler button:focus {
   cursor: pointer;
 }
 
-.navbar .navbar-toggler.collapsed i {
+.navbar-light .navbar-toggler.collapsed i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   padding: 10px 25px 10px 0px;
   text-transform: uppercase;
+  color: #222222;
 }
 
-.navbar-nav .nav-link.active {
-  color: #159309;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0a6c84;
 }
 
-.navbar-nav .dropdown-item:focus, .navbar-nav .dropdown-item:hover {
+.navbar-light .navbar-nav .nav-link.active {
+  color: #107107;
+}
+
+.navbar-light .navbar-nav .dropdown-item:focus, .navbar-light .navbar-nav .dropdown-item:hover {
   color: #ffffff;
   background-color: #107107;
 }
 
-.navbar-nav .dropdown-item.active, .navbar-nav .dropdown-item:active {
+.navbar-light .navbar-nav .dropdown-item.active, .navbar-light .navbar-nav .dropdown-item:active {
   background-color: #107107;
 }
 
+/*.navbar-light .navbar-nav .nav-link {
+     color: $black;
+     &:hover {
+     	color: lighten($black, 20%);
+     }
+}
+.navbar-light .navbar-nav .nav-link:active {
+     color: $black;
+     &:hover {
+     	color: lighten($black, 20%);
+     }
+}*/
 /* Main styles */
 .main-column {
   margin-top: 25px;
@@ -140,7 +158,7 @@ a:hover {
 
 .main-column .main .post-meta {
   font-size: 1.25rem;
-  color: #999999;
+  color: #666666;
   margin-bottom: 1rem;
 }
 
@@ -160,6 +178,10 @@ a:hover {
 /* sidebar styles */
 .sidebar-column {
   margin-top: 50px;
+}
+
+.sidebar-column a:hover {
+  text-decoration: underline;
 }
 
 .sidebar-column h3 {
@@ -452,7 +474,7 @@ gfield_description, .validation_error, .validation_message {
 }
 
 .gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label {
-  color: #333333;
+  color: #222222;
   font-weight: 500;
 }
 
