@@ -11,14 +11,14 @@ function btc_theme_setup()
 
                 // Setup Default WordPress settings
                 $core_settings = array(
-                        'gmt_offset' => -5,                             
+                        'gmt_offset' => -5,
                         'default_comment_status' => 'closed',
-                        'default_ping_status' => 'closed',           
+                        'default_ping_status' => 'closed',
                         'comment_moderation' => 1,
                         'comment_registration' => 1,
                         'require_name_email' => 1,
-                        'start_of_week' => 0,                           
-                        //'comments_per_page' => 20                     
+                        'start_of_week' => 0,
+                        //'comments_per_page' => 20
                 );
 
                 foreach ( $core_settings as $k => $v ) {
@@ -34,19 +34,34 @@ function btc_theme_setup()
                 update_option( 'theme_setup_status', '1' );
 
                 // Lets let the admin know whats going on.
-                $msg = '
-                <div class="error">
-                        <p>The '.get_option( 'current_theme' ).' theme has changed your WordPress default <a href="' . admin_url() . 'options-general.php" title="See Settings">settings</a>.</p>
-                </div>';
-                add_action( 'admin_notices', $c = create_function( '', 'echo "' . addcslashes( $msg, '"' ) . '";' ) );
-        } 
+
+                // new activation notice - fgs 6-16-2019
+
+				add_action( 'admin_notices', 'btc_boot_wp_activation_notice' );
+
+				function btc_boot_wp_activation_notice() {
+				    ?>
+				    	<div class="updated notice is-dismissible">
+				        	<?php echo '<p>The '.get_option( 'current_theme' ).' theme has changed your WordPress default <a href="' . admin_url() . 'options-general.php" title="See Settings">settings</a>.</p>' ?>
+				    	</div>
+				    <?php
+				}
+        }
         // Else if we are re-activing the theme
         elseif ( $the_theme_status === '1' and isset( $_GET['activated'] ) ) {
-                $msg = '
-                <div class="updated">
-                        <p>The ' . get_option( 'current_theme' ) . ' theme was successfully re-activated.</p>
-                </div>';
-                add_action( 'admin_notices', $c = create_function( '', 'echo "' . addcslashes( $msg, '"' ) . '";' ) );
+
+                // new activation notice - fgs 6-16-2019
+
+				add_action( 'admin_notices', 'btc_boot_wp_reactivation_notice' );
+
+
+				function btc_boot_wp_reactivation_notice() {
+				    ?>
+				    	<div class="updated notice is-dismissible">
+				        	<?php echo '<p>The ' . get_option( 'current_theme' ) . ' theme was successfully re-activated.</p>'; ?>
+				    	</div>
+				    <?php
+				}
         }
 }
 ?>
