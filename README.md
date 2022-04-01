@@ -25,3 +25,5 @@ Clone this repo into any folder, then hook up the theme folder to CodeKit and yo
 
 - **theme_default_setup.php** that removes typically unwanted WordPress backend items.
 - **BTC Site Functionality Plugin** containing: post_types.php, taxonomies.php, metaboxes.php, metaboxes_cmb2.php
+
+*Fred Shequine*
