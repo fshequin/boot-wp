@@ -1,0 +1,1 @@
+/Applications/MAMP/htdocs/boot-wp/wp-content/plugins/query-monitor/wp-content/db.php
