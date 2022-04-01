@@ -83,7 +83,7 @@ class GF_Upgrade {
 
 			$this->update_db_version();
 
-			update_option( 'rg_form_version', GFForms::$version );
+			update_option( 'rg_form_version', GFForms::$version, false );
 
 		} elseif ( $this->requires_upgrade() && ! $this->requires_upgrade_wizard() ) {
 
@@ -175,9 +175,9 @@ class GF_Upgrade {
 		$this->flush_versions();
 
 		// Setting Database version
-		update_option( 'gf_db_version', GFForms::$version );
+		update_option( 'gf_db_version', GFForms::$version, false );
 
-		update_option( 'rg_form_version', GFForms::$version );
+		update_option( 'rg_form_version', GFForms::$version, false );
 
 		// Installing schema
 		$this->upgrade_schema();
@@ -315,6 +315,8 @@ class GF_Upgrade {
 		// Clear all transients to make sure the new version doesn't use cached results.
 		GFCache::flush( true );
 
+		$this->remove_obsolete_admin_notices();
+
 		$this->add_post_upgrade_admin_notices();
 
 		GFCommon::log_debug( __METHOD__ . '(): Upgrade Completed.' );
@@ -375,18 +377,18 @@ class GF_Upgrade {
 		$form_table_name            = $wpdb->prefix . 'gf_form';
 		$tables[ $form_table_name ] =
 			'CREATE TABLE ' . $form_table_name . " (
-              id mediumint(8) unsigned not null auto_increment,
+              id mediumint unsigned not null auto_increment,
               title varchar(150) not null,
               date_created datetime not null,
               date_updated datetime,
-              is_active tinyint(1) not null default 1,
-              is_trash tinyint(1) not null default 0,
+              is_active tinyint not null default 1,
+              is_trash tinyint not null default 0,
               PRIMARY KEY  (id)
             ) $charset_collate;";
 
 		$meta_table_name            = $wpdb->prefix . 'gf_form_meta';
 		$tables[ $meta_table_name ] = 'CREATE TABLE ' . $meta_table_name . " (
-              form_id mediumint(8) unsigned not null,
+              form_id mediumint unsigned not null,
               display_meta longtext,
               entries_grid_meta longtext,
               confirmations longtext,
@@ -397,11 +399,11 @@ class GF_Upgrade {
 		$form_view_table_name            = $wpdb->prefix . 'gf_form_view';
 		$tables[ $form_view_table_name ] =
 			'CREATE TABLE ' . $form_view_table_name . " (
-              id bigint(20) unsigned not null auto_increment,
-              form_id mediumint(8) unsigned not null,
+              id bigint unsigned not null auto_increment,
+              form_id mediumint unsigned not null,
               date_created datetime not null,
               ip char(15),
-              count mediumint(8) unsigned not null default 1,
+              count mediumint unsigned not null default 1,
               PRIMARY KEY  (id),
               KEY date_created (date_created),
               KEY form_id (form_id)
@@ -409,8 +411,8 @@ class GF_Upgrade {
 
 		$revisions_table_name            = GFFormsModel::get_form_revisions_table_name();
 		$tables[ $revisions_table_name ] = 'CREATE TABLE ' . $revisions_table_name . " (
-		      id bigint(20) unsigned not null auto_increment,
-              form_id mediumint(8) unsigned not null,
+		      id bigint unsigned not null auto_increment,
+              form_id mediumint unsigned not null,
               display_meta longtext,
               date_created datetime not null,
               PRIMARY KEY  (id),
@@ -421,14 +423,14 @@ class GF_Upgrade {
 		$entry_table_name = GFFormsModel::get_entry_table_name();
 		$tables[ $entry_table_name ] =
 			'CREATE TABLE ' . $entry_table_name . " (
-              id int(10) unsigned not null auto_increment,
-              form_id mediumint(8) unsigned not null,
-              post_id bigint(20) unsigned,
+              id int unsigned not null auto_increment,
+              form_id mediumint unsigned not null,
+              post_id bigint unsigned,
               date_created datetime not null,
               date_updated datetime,
-              is_starred tinyint(1) not null default 0,
-              is_read tinyint(1) not null default 0,
-              ip varchar(39) not null,
+              is_starred tinyint not null default 0,
+              is_read tinyint not null default 0,
+              ip varchar(45) not null,
               source_url varchar(200) not null default '',
               user_agent varchar(250) not null default '',
               currency varchar(5),
@@ -437,9 +439,9 @@ class GF_Upgrade {
               payment_amount decimal(19,2),
               payment_method varchar(30),
               transaction_id varchar(50),
-              is_fulfilled tinyint(1),
-              created_by bigint(20) unsigned,
-              transaction_type tinyint(1),
+              is_fulfilled tinyint,
+              created_by bigint unsigned,
+              transaction_type tinyint,
               status varchar(20) not null default 'active',
               PRIMARY KEY  (id),
               KEY form_id (form_id),
@@ -449,10 +451,10 @@ class GF_Upgrade {
 		$entry_notes_table_name = GFFormsModel::get_entry_notes_table_name();
 		$tables[ $entry_notes_table_name ] =
 			'CREATE TABLE ' . $entry_notes_table_name . " (
-              id int(10) unsigned not null auto_increment,
-              entry_id int(10) unsigned not null,
+              id int unsigned not null auto_increment,
+              entry_id int unsigned not null,
               user_name varchar(250),
-              user_id bigint(20),
+              user_id bigint,
               date_created datetime not null,
               value longtext,
               note_type varchar(50),
@@ -465,9 +467,9 @@ class GF_Upgrade {
 		$entry_meta_table_name = GFFormsModel::get_entry_meta_table_name();
 		$tables[ $entry_meta_table_name ] =
 			'CREATE TABLE ' . $entry_meta_table_name . " (
-              id bigint(20) unsigned not null auto_increment,
-              form_id mediumint(8) unsigned not null default 0,
-              entry_id bigint(20) unsigned not null,
+              id bigint unsigned not null auto_increment,
+              form_id mediumint unsigned not null default 0,
+              entry_id bigint unsigned not null,
               meta_key varchar(255),
               meta_value longtext,
               item_index varchar(60),
@@ -482,14 +484,18 @@ class GF_Upgrade {
 			'CREATE TABLE ' . $draft_submissions_table_name . " (
               uuid char(32) not null,
               email varchar(255),
-              form_id mediumint(8) unsigned not null,
+              form_id mediumint unsigned not null,
               date_created datetime not null,
-              ip varchar(39) not null,
+              ip varchar(45) not null,
               source_url longtext not null,
               submission longtext not null,
               PRIMARY KEY  (uuid),
               KEY form_id (form_id)
             ) $charset_collate;";
+
+		if ( version_compare( GFCommon::get_db_version(), '8.0.17', '<' ) || ( GFCommon::get_dbms_type() === 'MariaDB' ) ) {
+			$tables = $this->make_tables_backward_compatible( $tables );
+		}
 
 		//Return schema for a particular table if the table name parameter is specified.
 		if ( $table_name ) {
@@ -498,6 +504,21 @@ class GF_Upgrade {
 			//Return schema for all tables
 			return $tables;
 		}
+	}
+
+	/**
+	 * Modifies the database schema to include column lengths where required by versions of SQL before 8.0.17.
+	 *
+	 * @since  2.5
+	 *
+	 * @param array $tables The array of tables to be modified for backwards compatibility.
+	 * @return array Return an array of tables modified with column lengths on integers.
+	 */
+	private function make_tables_backward_compatible( $tables ) {
+		$columns_without_lengths = array( '/(int)([\s,])/', '/(tinyint)([\s,])/', '/(mediumint)([\s,])/', '/(bigint)([\s,])/' );
+		$columns_with_lengths    = array( '$1(10)$2', '$1(1)$2', '$1(8)$2', '$1(20)$2' );
+
+		return $tables = preg_replace( $columns_without_lengths, $columns_with_lengths, $tables );
 	}
 
 	public function check_table_schema( $table_name ) {
@@ -509,6 +530,7 @@ class GF_Upgrade {
 		if ( empty( $to_update ) ) {
 			return true;
 		} else {
+			GFCommon::log_debug( __METHOD__ . '(): Failed queries: ' . print_r( $to_update, true ) );
 
 			return false;
 		}
@@ -1590,6 +1612,7 @@ HAVING count(*) > 1;" );
 
 		$previous_db_version = get_option( 'gf_previous_db_version' );
 
+
 		$this->versions = array(
 			'version'             => GFForms::$version,
 			'current_version'     => get_option( 'rg_form_version' ),
@@ -1605,7 +1628,8 @@ HAVING count(*) > 1;" );
 	 */
 	public function flush_versions() {
 		$this->versions = null;
-		wp_cache_flush();
+		wp_cache_delete( 'gf_db_version' );
+		wp_cache_delete( 'rg_form_version' );
 	}
 
 	/**
@@ -1705,8 +1729,8 @@ HAVING count(*) > 1;" );
 	 * @param string $version
 	 */
 	public function update_db_version( $version = null ) {
-		delete_option( 'gf_db_version' );
-		add_option( 'gf_db_version', is_null( $version ) ? GFForms::$version : $version );
+		$version = is_null( $version ) ? GFForms::$version : $version;
+		update_option( 'gf_db_version', $version, false );
 	}
 
 	/**
@@ -1826,12 +1850,20 @@ HAVING count(*) > 1;" );
 	}
 
 	/**
+	 * Removes notices from previous versions that are no longer relevant.
+	 *
+	 * @since 2.6
+	 */
+	public function remove_obsolete_admin_notices() {
+		GFCommon::remove_dismissible_message( 'gravityforms_update_2_5' );
+	}
+
+	/**
 	 * Adds dismissible admin notices.
 	 *
 	 * @since 2.3
 	 */
 	public function add_post_upgrade_admin_notices() {
-
 		$previous_db_version = get_option( 'gf_previous_db_version' );
 
 		$key = sanitize_key( 'gravityforms_outdated_addons_2.3' );

@@ -13,6 +13,30 @@ class GF_Field_Website extends GF_Field {
 		return esc_attr__( 'Website', 'gravityforms' );
 	}
 
+	/**
+	 * Returns the field's form editor description.
+	 *
+	 * @since 2.5
+	 *
+	 * @return string
+	 */
+	public function get_form_editor_field_description() {
+		return esc_attr__( 'Allows users to enter a website URL.', 'gravityforms' );
+	}
+
+	/**
+	 * Returns the field's form editor icon.
+	 *
+	 * This could be an icon url or a gform-icon class.
+	 *
+	 * @since 2.5
+	 *
+	 * @return string
+	 */
+	public function get_form_editor_field_icon() {
+		return 'gform-icon--link';
+	}
+
 	function get_form_editor_field_settings() {
 		return array(
 			'conditional_logic_field_setting',
@@ -37,7 +61,7 @@ class GF_Field_Website extends GF_Field {
 	}
 
 	public function validate( $value, $form ) {
-		if ( empty( $value ) || $value == 'http://' ) {
+		if ( empty( $value ) || in_array( $value, array( 'http://', 'https://' ) ) ) {
 			$value = '';
 			if ( $this->isRequired ) {
 				$this->failed_validation  = true;
@@ -47,7 +71,7 @@ class GF_Field_Website extends GF_Field {
 
 		if ( ! empty( $value ) && ! GFCommon::is_valid_url( $value ) ) {
 			$this->failed_validation  = true;
-			$this->validation_message = empty( $this->errorMessage ) ? esc_html__( 'Please enter a valid Website URL (e.g. http://www.gravityforms.com).', 'gravityforms' ) : $this->errorMessage;
+			$this->validation_message = empty( $this->errorMessage ) ? esc_html__( 'Please enter a valid Website URL (e.g. https://gravityforms.com).', 'gravityforms' ) : $this->errorMessage;
 		}
 	}
 
@@ -63,10 +87,9 @@ class GF_Field_Website extends GF_Field {
 		$disabled_text   = $is_form_editor ? "disabled='disabled'" : '';
 		$class_suffix    = $is_entry_detail ? '_admin' : '';
 		$class           = $size . $class_suffix;
+		$class           = esc_attr( $class );
 		$is_html5        = RGFormsModel::is_html5_enabled();
 		$html_input_type = $is_html5 ? 'url' : 'text';
-
-		$max_length = is_numeric( $this->maxLength ) ? "maxlength='{$this->maxLength}'" : '';
 
 		$placeholder_attribute = $this->get_field_placeholder_attribute();
 		$required_attribute    = $this->isRequired ? 'aria-required="true"' : '';
@@ -78,7 +101,7 @@ class GF_Field_Website extends GF_Field {
 		$class    = esc_attr( $class );
 
 		return "<div class='ginput_container ginput_container_website'>
-                    <input name='input_{$id}' id='{$field_id}' type='$html_input_type' value='{$value}' class='{$class}' {$max_length} {$tabindex} {$aria_describedby} {$disabled_text} {$placeholder_attribute} {$required_attribute} {$invalid_attribute}/>
+                    <input name='input_{$id}' id='{$field_id}' type='$html_input_type' value='{$value}' class='{$class}' {$tabindex} {$aria_describedby} {$disabled_text} {$placeholder_attribute} {$required_attribute} {$invalid_attribute}/>
                 </div>";
 	}
 

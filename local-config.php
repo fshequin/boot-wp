@@ -79,7 +79,16 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+
+//define('WP_DEBUG', false);
+
+// Enable WP_DEBUG mode, Enable Debug logging to the /wp-content/debug.log file,
+// Disable display of errors and warnings, Use dev versions of core JS and CSS files (only needed if you are modifying these core files).*/
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+define( 'SCRIPT_DEBUG', true );
 
 /* That's all, stop editing! Happy blogging. */
 

@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"AAInfo": "This is a CodeKit 3 project config file. EDITING THIS FILE IS A POOR LIFE DECISION. Doing so may cause CodeKit to crash and/or corrupt your project. Several critical values in this file are 64-bit integers, which JavaScript JSON parsers do not support because JavaScript cannot handle 64-bit integers. These values will be corrupted if the file is parsed with JavaScript. This file is not backwards-compatible with CodeKit 1 or 2. For details, see https://codekitapp.com/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -7,7 +7,7 @@
 		"uuidString": "B155EAA3-2A0C-4CD6-9231-6C12E3406392"
 		}
 	],
-"creatorBuild": "29156",
+"creatorBuild": "33081",
 "files": {
 	"/bootstrap-navwalker/_notes/dwsync.xml": {
 		"cB": 0,
@@ -568,7 +568,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/brand/bootstrap-social.png": {
 		"ft": 32768,
@@ -579,7 +581,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/brand/bootstrap-solid.svg": {
 		"ft": 2097152,
@@ -618,7 +622,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/bootstrap-themes.png": {
 		"ft": 32768,
@@ -629,7 +635,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/android-chrome-192x192.png": {
 		"ft": 32768,
@@ -640,7 +648,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/android-chrome-512x512.png": {
 		"ft": 32768,
@@ -651,7 +661,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/apple-touch-icon.png": {
 		"ft": 32768,
@@ -662,7 +674,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/browserconfig.xml": {
 		"cB": 0,
@@ -681,7 +695,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/favicon-32x32.png": {
 		"ft": 32768,
@@ -692,7 +708,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/manifest.json": {
 		"ft": 524288,
@@ -711,7 +729,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/mstile-150x150.png": {
 		"ft": 32768,
@@ -722,7 +742,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/mstile-310x150.png": {
 		"ft": 32768,
@@ -733,7 +755,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/mstile-310x310.png": {
 		"ft": 32768,
@@ -744,7 +768,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/mstile-70x70.png": {
 		"ft": 32768,
@@ -755,7 +781,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/assets/img/favicons/safari-pinned-tab.svg": {
 		"ft": 2097152,
@@ -878,261 +906,261 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_ads.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_algolia.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_algolia.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_anchor.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_anchor.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_brand.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_brand.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_browser-bugs.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_browser-bugs.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_buttons.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_callouts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_callouts.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_clipboard-js.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_clipboard-js.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_colors.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_colors.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_component-examples.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_component-examples.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_content.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_content.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_examples.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_examples.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_footer.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_masthead.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_masthead.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_nav.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_nav.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_sidebar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_sidebar.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_skiplink.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_skiplink.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_syntax.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_syntax.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/assets/scss/_variables.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/assets/scss/docs.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/bootstrap/assets/scss/docs.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/build/.eslintrc.json": {
 		"ft": 524288,
@@ -2427,7 +2455,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/blog.png": {
 		"ft": 32768,
@@ -2438,7 +2468,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/carousel.png": {
 		"ft": 32768,
@@ -2449,7 +2481,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/checkout.png": {
 		"ft": 32768,
@@ -2460,7 +2494,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/cover.png": {
 		"ft": 32768,
@@ -2471,7 +2507,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/dashboard.png": {
 		"ft": 32768,
@@ -2482,7 +2520,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/floating-labels.png": {
 		"ft": 32768,
@@ -2493,7 +2533,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/grid.png": {
 		"ft": 32768,
@@ -2504,7 +2546,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/jumbotron.png": {
 		"ft": 32768,
@@ -2515,7 +2559,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/navbar-bottom.png": {
 		"ft": 32768,
@@ -2526,7 +2572,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/navbar-fixed.png": {
 		"ft": 32768,
@@ -2537,7 +2585,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/navbar-static.png": {
 		"ft": 32768,
@@ -2548,7 +2598,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/navbars.png": {
 		"ft": 32768,
@@ -2559,7 +2611,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/offcanvas.png": {
 		"ft": 32768,
@@ -2570,7 +2624,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/pricing.png": {
 		"ft": 32768,
@@ -2581,7 +2637,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/product.png": {
 		"ft": 32768,
@@ -2592,7 +2650,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/sign-in.png": {
 		"ft": 32768,
@@ -2603,7 +2663,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/starter-template.png": {
 		"ft": 32768,
@@ -2614,7 +2676,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/sticky-footer-navbar.png": {
 		"ft": 32768,
@@ -2625,7 +2689,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/screenshots/sticky-footer.png": {
 		"ft": 32768,
@@ -2636,7 +2702,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/bootstrap/docs/4.0/examples/sign-in/index.html": {
 		"cB": 0,
@@ -4154,1080 +4222,1080 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_alert.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_badge.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_breadcrumb.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_breadcrumb.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_button-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_button-group.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_buttons.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_card.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_card.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_carousel.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_close.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_close.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_code.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_code.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_custom-forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_custom-forms.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_dropdown.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_dropdown.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_forms.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_functions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_functions.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_grid.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_images.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_images.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_input-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_input-group.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_jumbotron.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_jumbotron.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_list-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_list-group.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_media.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_mixins.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_modal.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_modal.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_nav.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_nav.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_navbar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_navbar.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_pagination.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_popover.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_popover.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_print.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_print.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_progress.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_progress.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_reboot.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_reboot.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_root.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_root.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_tables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_tables.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_tooltip.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_tooltip.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_transitions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_transitions.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_type.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_utilities.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_utilities.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/_variables.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/bootstrap-grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/bootstrap/scss/bootstrap-grid.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/bootstrap-reboot.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/bootstrap/scss/bootstrap-reboot.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/bootstrap.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/bootstrap/scss/bootstrap.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_alert.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_alert.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_background-variant.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_background-variant.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_badge.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_border-radius.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_border-radius.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_box-shadow.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_box-shadow.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_breakpoints.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_breakpoints.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_buttons.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_caret.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_caret.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_clearfix.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_float.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_float.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_forms.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_gradients.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_gradients.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_grid-framework.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_grid-framework.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_grid.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_hover.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_hover.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_image.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_image.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_list-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_list-group.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_lists.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_lists.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_nav-divider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_nav-divider.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_navbar-align.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_navbar-align.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_pagination.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_reset-text.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_reset-text.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_resize.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_resize.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_screen-reader.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_screen-reader.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_size.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_size.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_table-row.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_table-row.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_text-emphasis.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_text-emphasis.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_text-hide.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_text-hide.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_text-truncate.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_text-truncate.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_transition.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_transition.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/mixins/_visibility.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/mixins/_visibility.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_align.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_align.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_background.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_background.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_borders.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_borders.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_clearfix.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_display.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_display.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_embed.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_embed.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_flex.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_flex.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_float.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_float.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_position.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_position.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_screenreaders.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_screenreaders.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_sizing.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_sizing.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_spacing.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_spacing.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_text.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_text.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/scss/utilities/_visibility.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/bootstrap/scss/utilities/_visibility.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/bootstrap/sw.js": {
 		"bF": 0,
@@ -7109,53 +7177,53 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/_sass/libs/_functions.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/_sass/libs/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/_sass/libs/_mixins.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/_sass/libs/_skel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/_sass/libs/_skel.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/_sass/libs/_vars.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/_sass/libs/_vars.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/CNAME": {
 		"cB": 0,
@@ -7170,7 +7238,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/css/code.css",
 		"oF": 0,
 		"oS": 3
@@ -7180,7 +7248,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/css/font-awesome.min.css",
 		"oF": 0,
 		"oS": 3
@@ -7189,27 +7257,27 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/popper.js/docs/css/ie8.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/css/ie9.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/popper.js/docs/css/ie9.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/css/images/arrow.svg": {
 		"ft": 2097152,
@@ -7245,21 +7313,21 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/popper.js/docs/css/main.scss",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/popper.js/docs/css/popper.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/bower_components/popper.js/docs/css/popper.css",
 		"oF": 0,
 		"oS": 3
@@ -7281,7 +7349,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/favicon-32x32.png": {
 		"ft": 32768,
@@ -7292,7 +7362,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/favicon-96x96.png": {
 		"ft": 32768,
@@ -7303,7 +7375,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/favicon.ico": {
 		"cB": 0,
@@ -7380,7 +7454,9 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/banner.png": {
 		"ft": 32768,
@@ -7391,7 +7467,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/logo.png": {
 		"ft": 32768,
@@ -7402,7 +7480,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/pic01.jpg": {
 		"ft": 16384,
@@ -7413,7 +7493,9 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/pic02.jpg": {
 		"ft": 16384,
@@ -7424,7 +7506,9 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/pic03.jpg": {
 		"ft": 16384,
@@ -7435,7 +7519,9 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/pic04.jpg": {
 		"ft": 16384,
@@ -7446,7 +7532,9 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/images/pic05.jpg": {
 		"ft": 16384,
@@ -7457,7 +7545,9 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/docs/index.html": {
 		"cB": 0,
@@ -8710,7 +8800,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/popper.js/README.md": {
 		"cB": 0,
@@ -9102,14 +9194,14 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/docs/sass/intro.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/docs/welcome/browser-demo.html": {
 		"cB": 0,
@@ -9227,40 +9319,40 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/tether/docs/welcome/sass/_inline-block.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/docs/welcome/sass/browser-demo.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/docs/welcome/sass/browser-demo.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/docs/welcome/sass/welcome.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/docs/welcome/sass/welcome.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/examples/chosen/chosen-sprite.png": {
 		"ft": 32768,
@@ -9271,7 +9363,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/tether/examples/chosen/chosen-sprite@2x.png": {
 		"ft": 32768,
@@ -9282,7 +9376,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/bower_components/tether/examples/chosen/chosen.css": {
 		"aP": 1,
@@ -9542,118 +9638,118 @@
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/tether/src/css/helpers/_tether-theme-arrows.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/helpers/_tether-theme-basic.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/tether/src/css/helpers/_tether-theme-basic.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/helpers/_tether.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/bower_components/tether/src/css/helpers/_tether.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/mixins/_inline-block.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/src/css/mixins/_inline-block.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/mixins/_pie-clearfix.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/src/css/mixins/_pie-clearfix.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/tether-theme-arrows-dark.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/src/css/tether-theme-arrows-dark.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/tether-theme-arrows.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/src/css/tether-theme-arrows.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/tether-theme-basic.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/src/css/tether-theme-basic.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/css/tether.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 2,
 		"ma": 0,
 		"oA": 2,
 		"oAP": "/bower_components/tether/src/css/tether.sass",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/bower_components/tether/src/js/abutment.js": {
 		"bF": 0,
@@ -9770,7 +9866,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/index.php": {
 		"cB": 0,
@@ -9854,59 +9952,61 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/scss/_gravity.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_gravity.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/scss/_responsive.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_responsive.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/scss/_royal-slider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_royal-slider.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/scss/style.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 5,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 2,
 		"oS": 1,
-		"uL": 1
+		"sct": 1
 		},
 	"/searchform.php": {
 		"cB": 0,
@@ -9956,6 +10056,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
@@ -9967,6 +10068,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -10106,6 +10208,9 @@
 		"modules-umd": {
 			"active": 0
 			},
+		"named-capturing-groups-regex": {
+			"active": 0
+			},
 		"new-target": {
 			"active": 0
 			},
@@ -10137,6 +10242,9 @@
 			"active": 0
 			},
 		"parameters": {
+			"active": 0
+			},
+		"partial-application": {
 			"active": 0
 			},
 		"pipeline-operator": {
@@ -10231,11 +10339,10 @@
 			}
 		},
 	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
 	"bowerAbbreviatedPath": "bower_components",
-	"bowerAutoCreateInfoFile": 1,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 1,
-	"bowerSaveDevDependencies": 0,
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": "> 1%, last 2 versions, ff 17, opera 12.1",
@@ -10380,6 +10487,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -10417,8 +10525,7 @@
 			"optionString": "{'before': true, 'after': true}"
 			},
 		"block-scoped-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"block-spacing": {
 			"active": 0,
@@ -10473,16 +10580,20 @@
 			"optionString": "'that'"
 			},
 		"constructor-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"curly": {
 			"active": 0,
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"default-case-last": {
+			"active": 0
+			},
+		"default-param-last": {
+			"active": 0
 			},
 		"dot-location": {
 			"active": 0,
@@ -10501,8 +10612,7 @@
 			"optionString": "'always', {'null': 'always'}"
 			},
 		"for-direction": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"func-call-spacing": {
 			"active": 0,
@@ -10533,12 +10643,14 @@
 			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
+			"active": 0
+			},
+		"grouped-accessor-pairs": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"handle-callback-err": {
 			"active": 0,
@@ -10653,44 +10765,35 @@
 			"optionString": "{'ignoreChainWithDepth': 2}"
 			},
 		"no-alert": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-array-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-async-promise-executor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-await-in-loop": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
 			},
 		"no-buffer-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-caller": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-case-declarations": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-class-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-compare-neg-zero": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-cond-assign": {
 			"active": 1,
@@ -10705,116 +10808,101 @@
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-constant-condition": {
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0
+			},
 		"no-continue": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-control-regex": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-debugger": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-delete-var": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-div-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-dupe-args": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-class-members": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-dupe-else-if": {
+			"active": 1
 			},
 		"no-dupe-keys": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-duplicate-imports": {
 			"active": 0,
 			"optionString": "{'includeExports': false}"
 			},
 		"no-else-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-empty": {
 			"active": 1,
 			"optionString": "{'allowEmptyCatch': false}"
 			},
 		"no-empty-character-class": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-empty-function": {
 			"active": 0,
 			"optionString": "{'allow': []}"
 			},
 		"no-empty-pattern": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-eq-null": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-eval": {
 			"active": 0,
 			"optionString": "{'allowIndirect': false}"
 			},
 		"no-ex-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extend-native": {
 			"active": 0,
 			"optionString": "{'exceptions': []}"
 			},
 		"no-extra-bind": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-boolean-cast": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extra-labels": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-parens": {
 			"active": 1,
 			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
 			},
 		"no-extra-semi": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-fallthrough": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-floating-decimal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-func-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-global-assign": {
 			"active": 0,
@@ -10825,16 +10913,16 @@
 			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
 			},
 		"no-implicit-globals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-implied-eval": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-import-assign": {
+			"active": 1
 			},
 		"no-inline-comments": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-inner-declarations": {
 			"active": 1,
@@ -10853,36 +10941,33 @@
 			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
 			},
 		"no-iterator": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-label-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-labels": {
 			"active": 0,
 			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
 			},
 		"no-lone-blocks": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-lonely-if": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-loop-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-loss-of-precision": {
+			"active": 0
 			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
 		"no-misleading-character-class": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-mixed-operators": {
 			"active": 0,
@@ -10897,108 +10982,95 @@
 			"optionString": ""
 			},
 		"no-multi-assign": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
 			},
 		"no-multi-str": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multiple-empty-lines": {
 			"active": 0,
 			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
 			},
 		"no-negated-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-nested-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-object": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-require": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-symbol": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-new-wrappers": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-obj-calls": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-param-reassign": {
 			"active": 0,
 			"optionString": "{'props': false}"
 			},
 		"no-path-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-plusplus": {
 			"active": 0,
 			"optionString": "{'allowForLoopAfterthoughts': false}"
 			},
 		"no-process-env": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-process-exit": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-promise-executor-return": {
+			"active": 0
 			},
 		"no-proto": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-prototype-builtins": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
 			},
 		"no-regex-spaces": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
 			"optionString": "'event', 'fdescribe'"
 			},
 		"no-restricted-imports": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-restricted-modules": {
 			"active": 0,
@@ -11017,36 +11089,33 @@
 			"optionString": "'except-parens'"
 			},
 		"no-return-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-script-url": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-self-assign": {
 			"active": 1,
 			"optionString": "{'props': false}"
 			},
 		"no-self-compare": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-sequences": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-setter-return": {
+			"active": 1
 			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
 			},
 		"no-shadow-restricted-names": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-sparse-arrays": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-sync": {
 			"active": 0,
@@ -11057,20 +11126,16 @@
 			"optionString": ""
 			},
 		"no-template-curly-in-string": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-this-before-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-throw-literal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-trailing-spaces": {
 			"active": 0,
@@ -11081,36 +11146,34 @@
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-undefined": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-underscore-dangle": {
 			"active": 0,
 			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
 			},
 		"no-unexpected-multiline": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unmodified-loop-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-unneeded-ternary": {
 			"active": 0,
 			"optionString": "{'defaultAssignment': true}"
 			},
 		"no-unreachable": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-unreachable-loop": {
+			"active": 0,
+			"optionString": "{'ignore': []}"
 			},
 		"no-unsafe-finally": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unsafe-negation": {
 			"active": 0,
@@ -11121,8 +11184,7 @@
 			"optionString": "{'allowShortCircuit': false, 'allowTernary': false}"
 			},
 		"no-unused-labels": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unused-vars": {
 			"active": 1,
@@ -11132,41 +11194,37 @@
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
 			},
+		"no-useless-backreference": {
+			"active": 0
+			},
 		"no-useless-call": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-catch": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-computed-key": {
 			"active": 1,
 			"optionString": ""
 			},
 		"no-useless-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-rename": {
 			"active": 0,
 			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
 			},
 		"no-useless-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-void": {
 			"active": 0,
@@ -11177,12 +11235,10 @@
 			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
 			},
 		"no-whitespace-before-property": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-with": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"nonblock-statement-body-position": {
 			"active": 0,
@@ -11229,8 +11285,7 @@
 			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
 			},
 		"prefer-arrow-callback": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-const": {
 			"active": 0,
@@ -11240,29 +11295,33 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-exponentiation-operator": {
+			"active": 0
+			},
+		"prefer-named-capture-group": {
+			"active": 0
+			},
 		"prefer-numeric-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-object-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
 			},
+		"prefer-regex-literals": {
+			"active": 0
+			},
 		"prefer-rest-params": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-template": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"quote-props": {
 			"active": 0,
@@ -11277,24 +11336,20 @@
 			"optionString": "'always'"
 			},
 		"require-atomic-updates": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
 			},
 		"require-unicode-regexp": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-yield": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"rest-spread-spacing": {
 			"active": 0,
@@ -11357,8 +11412,7 @@
 			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"template-curly-spacing": {
 			"active": 0,
@@ -11385,16 +11439,14 @@
 			"optionString": "{'requireStringLiterals': true}"
 			},
 		"vars-on-top": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"wrap-iife": {
 			"active": 0,
 			"optionString": "'outside'"
 			},
 		"wrap-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"yield-star-spacing": {
 			"active": 0,
@@ -11789,7 +11841,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsHAML": {
 		"autoOutputAction": 0,
@@ -11815,7 +11869,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"outputFormat": 0,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -11860,7 +11916,6 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -11908,7 +11963,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"optimizerType": 1,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -11929,13 +11986,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
+		"compilerType": 1,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 5,
+		"emitCharset": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
@@ -11993,8 +12050,16 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
@@ -12301,6 +12366,8 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$",
+	"webpPresets": {
+		},
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
