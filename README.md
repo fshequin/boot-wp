@@ -27,3 +27,5 @@ Clone this repo into any folder, then hook up the theme folder to CodeKit and yo
 - **BTC Site Functionality Plugin** containing: post_types.php, taxonomies.php, metaboxes.php, metaboxes_cmb2.php
 
 *Fred Shequine*
+*Wordpress Developer*
+
